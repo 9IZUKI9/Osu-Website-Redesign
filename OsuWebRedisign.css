@@ -15610,9 +15610,11 @@
     }
 
     .artist__description {
-        background-color: #00000014;
+        background-color: #171719;
         font-size: 14px;
-        padding: 20px 10px
+        padding: 20px 10px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -15634,14 +15636,16 @@
     }
 
     .artist__index {
-        background-color: #00000014;
+        background-color: #00000036;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         overflow: hidden;
-        padding: 10px
+        padding: 10px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .artist__label-overlay {
@@ -15669,8 +15673,9 @@
 
     @media (min-width: 900px) {
         .artist__links-area {
-            background:hsl(var(--hsl-b5));
-            box-shadow: 0 1px 3px rgba(0,0,0,.25)
+            background: #171719;
+            box-shadow: 0 1px 3px rgba(0,0,0,.25);
+            border-radius: 20px;
         }
     }
 
@@ -15688,6 +15693,7 @@
     }
 
     .artist__name {
+        color: white;
         display: block;
         font-size: 16px;
         font-weight: 700;
@@ -15703,7 +15709,7 @@
         background-image: var(--artist-portrait,url(/assets/images/artist-noavatar.29940f4f.jpg));
         background-position: 50%;
         background-size: cover;
-        border-radius: 4px;
+        border-radius: 15px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: block;
         height: 250px;
@@ -15773,10 +15779,11 @@
 
     .artist-album {
         align-items: center;
-        background-color: hsl(var(--hsl-b5));
+        background-color: #171719;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         overflow: hidden;
-        padding: 20px
+        padding: 20px;
+        border-radius: 40px;
     }
 
     .artist-album__badge {
@@ -15834,7 +15841,7 @@
 
     .artist-link-button {
         align-items: center;
-        background: hsl(var(--hsl-b4));
+        background: #27272775;
         border-radius: 4px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
@@ -15872,7 +15879,7 @@
     }
 
     .artist-link-button:hover {
-        background: hsl(var(--hsl-b6))
+        background: #34343475
     }
 
     .artist-link-button:hover .artist-link-button__chevron {
@@ -15902,154 +15909,158 @@
     }
 
     .artist-link-button--twitter .artist-link-button__lightbar {
-        background: #1d9bf0
+        background: white
     }
 
     .artist-link-button--twitter .artist-link-button__chevron {
-        color: #1d9bf0
+        color: white
     }
 
     .artist-link-button--twitter:hover .artist-link-button__lightbar {
-        background: #4db0f3;
+        background: white;
         box-shadow: 0 0 5px #65bbf5
     }
 
     .artist-link-button--twitter:hover .artist-link-button__chevron {
-        color: #4db0f3;
+        color: white;
         text-shadow: 0 0 10px #65bbf5
     }
 
     .artist-link-button--facebook .artist-link-button__lightbar {
-        background: #3b5998
+        background: white
     }
 
     .artist-link-button--facebook .artist-link-button__chevron {
-        color: #3b5998
+        color: white
     }
 
     .artist-link-button--facebook:hover .artist-link-button__lightbar {
-        background: #4c70ba;
+        background: white;
         box-shadow: 0 0 5px #5f7ec1
     }
 
     .artist-link-button--facebook:hover .artist-link-button__chevron {
-        color: #4c70ba;
+        color: white;
         text-shadow: 0 0 10px #5f7ec1
     }
 
     .artist-link-button--soundcloud .artist-link-button__lightbar {
-        background: #f50
+        background: white
     }
 
     .artist-link-button--soundcloud .artist-link-button__chevron {
-        color: #f50
+        color: white
     }
 
     .artist-link-button--soundcloud:hover .artist-link-button__lightbar {
-        background: #f73;
+        background: white;
         box-shadow: 0 0 5px #ff884d
     }
 
     .artist-link-button--soundcloud:hover .artist-link-button__chevron {
-        color: #f73;
+        color: white;
         text-shadow: 0 0 10px #ff884d
     }
 
     .artist-link-button--bandcamp .artist-link-button__lightbar {
-        background: #61929c
+        background: white
     }
 
     .artist-link-button--bandcamp .artist-link-button__chevron {
-        color: #61929c
+        color: white
     }
 
     .artist-link-button--bandcamp:hover .artist-link-button__lightbar {
-        background: #80a8b0;
+        background: white;
         box-shadow: 0 0 5px #90b3ba
     }
 
     .artist-link-button--bandcamp:hover .artist-link-button__chevron {
-        color: #80a8b0;
+        color: white;
         text-shadow: 0 0 10px #90b3ba
     }
 
+    .artist-link-button {
+        background-color: #27272775;
+    }
+
     .artist-link-button--osu {
-        background-color: #b17
+        background-color: #27272775
     }
 
     .artist-link-button--osu .artist-link-button__lightbar {
-        background: #000
+        background: white
     }
 
     .artist-link-button--osu .artist-link-button__chevron {
-        color: #000
+        color: white
     }
 
     .artist-link-button--osu:hover {
-        background: #d21386
+        background: #34343475
     }
 
     .artist-link-button--osu:hover .artist-link-button__lightbar {
-        background: #fff;
+        background: white;
         box-shadow: 0 0 5px #fff
     }
 
     .artist-link-button--osu:hover .artist-link-button__chevron {
-        color: #fff;
+        color: white;
         text-shadow: 0 0 10px #fff
     }
 
     .artist-link-button--patreon .artist-link-button__lightbar {
-        background: #e6461a
+        background: white
     }
 
     .artist-link-button--patreon .artist-link-button__chevron {
-        color: #e6461a
+        color: white
     }
 
     .artist-link-button--patreon:hover .artist-link-button__lightbar {
-        background: #eb6b48;
+        background: white;
         box-shadow: 0 0 5px #ee7e5f
     }
 
     .artist-link-button--patreon:hover .artist-link-button__chevron {
-        color: #eb6b48;
+        color: white;
         text-shadow: 0 0 10px #ee7e5f
     }
 
     .artist-link-button--spotify .artist-link-button__lightbar {
-        background: #1db954
+        background: white
     }
 
     .artist-link-button--spotify .artist-link-button__chevron {
-        color: #1db954
+        color: white
     }
 
     .artist-link-button--spotify:hover .artist-link-button__lightbar {
-        background: #2bde6a;
+        background: white;
         box-shadow: 0 0 5px #41e17a
     }
 
     .artist-link-button--spotify:hover .artist-link-button__chevron {
-        color: #2bde6a;
+        color: white;
         text-shadow: 0 0 10px #41e17a
     }
 
     .artist-link-button--youtube .artist-link-button__lightbar {
-        background: red
+        background: white
     }
 
     .artist-link-button--youtube .artist-link-button__chevron {
-        color: red
+        color: white
     }
 
     .artist-link-button--youtube:hover .artist-link-button__lightbar {
-        background: #f33;
+        background: white;
         box-shadow: 0 0 5px #ff4d4d
     }
 
     .artist-link-button--youtube:hover .artist-link-button__chevron {
-        color: #f33;
+        color: white;
         text-shadow: 0 0 10px #ff4d4d
     }
 
@@ -16080,7 +16091,8 @@
     .artist-sidebar-album__cover {
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         height: 128px;
-        width: 128px
+        width: 128px;
+        border-radius: 15px;
     }
 
     .artist-sidebar-album--new .artist-sidebar-album__cover {
@@ -16090,7 +16102,7 @@
     .artist-sidebar-album__cover-wrapper {
         height: 128px;
         position: relative;
-        width: 128px
+        width: 128px;
     }
 
     .artist-sidebar-album__glow {
@@ -16103,7 +16115,7 @@
         position: absolute;
         top: 0;
         transition: 1s ease-in-out;
-        width: 100%
+        width: 100%;
     }
 
     .artist-sidebar-album__title {
@@ -16235,11 +16247,16 @@
     .artist-track__col--preview {
         background-position: 50%;
         background-size: cover;
-        border-radius: 4px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         height: var(--cover-size);
         margin: 0;
         position: relative;
         width: var(--cover-size)
+    }
+
+    .artist-track__detail {
+        color: white;
     }
 
     .artist-track__detail--bpm {
@@ -16266,6 +16283,10 @@
     .artist-track__version {
         color: hsl(var(--hsl-c2));
         font-size: 12px
+    }
+
+    .artist-track-search-form {
+        background-color: transparent;
     }
 
     .artist-track-search-form__advanced {
@@ -16296,6 +16317,7 @@
     }
 
     .artist-track-search-form__content--buttons {
+        background-color: transparent;
         --vertical-gutter: 10px;
         display: flex;
         gap: 5px;
@@ -16998,7 +17020,7 @@
     }
 
     .bbcode-editor--create {
-        background-color: hsl(var(--hsl-b2));
+        background-color: #171719;
         padding: 15px 10px
     }
 
@@ -17198,6 +17220,7 @@
         position: absolute;
         top: 0;
         width: 100%;
+        color: white;
     }
 
     .bbcode-spoilerbox {
@@ -19359,11 +19382,13 @@
 
     .beatmap-pack--expanded,.beatmap-pack.js-accordion__item--expanded {
         box-shadow: 0 10px 20px rgba(0,0,0,.25);
-        z-index: 1
+        z-index: 1;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .beatmap-pack__body {
-        /* background-color: hsl(var(--hsl-b3)); */
+        background-color: transparent;
     }
 
     .beatmap-pack__date {
@@ -19440,7 +19465,9 @@
 
     .beatmap-packs {
         background-color: #00000036;
-        padding: 20px
+        padding: 20px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .beatmap-packs-header {
@@ -19559,16 +19586,16 @@
     }
 
     .beatmap-playcount__mapper {
-        color: hsl(var(--hsl-f1))
+        color: white
     }
 
     .beatmap-playcount__mapper-link {
-        color: hsl(var(--hsl-f1));
+        color: white;
         font-weight: 700
     }
 
     .beatmap-playcount__mapper-link:active,.beatmap-playcount__mapper-link:focus,.beatmap-playcount__mapper-link:hover {
-        color: hsl(var(--hsl-l1))
+        color: white
     }
 
     .beatmap-playcount__title {
@@ -20381,7 +20408,8 @@
         background-position: 50%;
         background-size: auto auto;
         background-size: cover;
-        border-radius: 0;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
         display: inline-flex;
         flex: none;
         height: 30px;
@@ -20407,6 +20435,8 @@
         position: absolute;
         top: 0;
         width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 
     @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
@@ -23588,7 +23618,7 @@
     }
 
     .changelog-entry__title code {
-        background-color: hsl(var(--hsl-b5));
+        background-color: #141414;
         border-radius: 4px;
         padding: 1px 4px
     }
@@ -24993,12 +25023,14 @@
     }
 
     .contest {
-        background-color: hsl(var(--hsl-b5));
-        color: hsl(var(--hsl-c1))
+        background-color: #171719;
+        color: hsl(var(--hsl-c1));
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .contest__description {
-        background-color: hsl(var(--hsl-b4));
+        background-color: #171719;
         font-family: var(--font-content-override,var(--font-content));
         font-size: 14px;
         line-height: 1.35;
@@ -25525,6 +25557,7 @@
 
     .contest-list-item {
         background-color: rgba(93, 93, 101, 0.09);
+        border-right: 5px solid white;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: #fff;
         display: block;
@@ -25542,7 +25575,12 @@
 
     .contest-list-item:active,.contest-list-item:focus,.contest-list-item:hover {
         color: #fff;
-        text-decoration: none
+        text-decoration: none;
+    }
+
+    .contest-list-item:hover {
+        background-color: transparent;
+        border-color: white;
     }
 
     @media (min-width: 900px) {
@@ -25623,6 +25661,7 @@
     }
 
     .contest-list-item__type {
+        color: white;
         font-size: 15px;
         text-transform: capitalize
     }
@@ -27154,8 +27193,8 @@
     }
 
     .forum-cover-edit {
-        background-color: hsl(var(--hsl-b2));
-        border-radius: 6px;
+        background-color: #171719;
+        border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         font-size: 12px;
         margin-top: 5px;
@@ -27177,7 +27216,8 @@
     .forum-cover-edit__cover {
         background-image: url(/assets/images/forum-cover-category-osu.e4db1419.jpg);
         background-size: cover;
-        border-radius: 6px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
         height: 0;
         padding-bottom: 24.16666667%;
         width: 100%
@@ -27544,7 +27584,7 @@
     }
 
     .forum-poll {
-        background-color: hsl(var(--hsl-b2));
+        background-color: #171719;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
         display: flex;
@@ -28712,7 +28752,7 @@
     }
 
     .forum-topic-toolbar {
-        background-color: hsl(var(--hsl-b3));
+        background-color: #171719;
         display: flex;
         justify-content: flex-end;
         padding: 5px
@@ -28739,9 +28779,9 @@
     }
 
     .forum-user-badge {
-        background-color: hsl(var(--hsl-b6));
+        background-color: #72727245;
         border-radius: 10000px;
-        color: hsl(var(--hsl-lime-2));
+        color: white;
         font-size: 8px;
         font-weight: 600;
         padding: 2px 10px;
@@ -29704,8 +29744,8 @@
         --input-bg: hsl(var(--hsl-b6));
         --input-border-colour: var(--input-border-base-colour);
         --input-border-base-colour: transparent;
-        --input-border-hover-colour: #bbbbbb;
-        --input-border-focus-colour: #bbbbbb;
+        --input-border-hover-colour: #bababa;
+        --input-border-focus-colour: #bababa;
         --input-border-error-colour: hsl(var(--hsl-red-2));
         --input-border-error-focus-colour: hsl(var(--hsl-red-3));
         --input-padding: var(--label-height) var(--input-padding-right) var(--input-padding-base) var(--input-padding-base);
@@ -30663,6 +30703,7 @@
     }
 
     .livestream-item__text--name {
+        color: white;
         font-size: 15px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -30670,7 +30711,10 @@
     }
 
     .livestream-page {
-        padding: 20px 10px
+        padding: 20px 10px;
+        background-color: #00000036;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -32549,7 +32593,7 @@
     .multiplayer-room {
         --bg: hsla(var(--hsl-b6),0.75);
         --border-radius: 10px;
-        --room-bg: linear-gradient(0.25turn,hsl(var(--hsl-b2)),hsla(var(--hsl-b2),0.8));
+        --room-bg: linear-gradient(0.25turn, hsl(0deg 0.26% 12.52%), hsl(0deg 0% 25.68% / 80%));
         color: hsl(var(--hsl-c1));
         display: flex;
         font-size: 12px;
@@ -32557,7 +32601,7 @@
     }
 
     .multiplayer-room:active,.multiplayer-room:focus,.multiplayer-room:hover {
-        --room-bg: linear-gradient(0.25turn,hsl(var(--hsl-b4)),hsla(var(--hsl-b4),0.8))
+        --room-bg: linear-gradient(0.25turn, hsl(0deg 0% 15.71%), hsl(0deg 0% 27.08% / 80%));
     }
 
     .multiplayer-room__chat-button {
@@ -34429,7 +34473,7 @@
 
     .osu-md code {
         color: white;
-        background-color: var(--code-background-colour);
+        background-color: #141414;
         border-radius: 4px;
         padding: 1px 4px;
         font-weight: 1000
@@ -34885,15 +34929,17 @@
 
     @media (min-width: 900px) {
         .osu-page--artist {
-            margin-top:10px
+            margin-top: 0;
         }
     }
 
     .osu-page--artist-track-search-result {
-        background-color: #00000014;
+        background-color: #00000036;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
-        padding: 10px
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -34910,7 +34956,9 @@
     .osu-page--changelog {
         background-color: #00000036;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .osu-page--changelog,.osu-page--comment {
@@ -34944,7 +34992,7 @@
     }
 
     .osu-page--description {
-        background-color: #5d5d6517;
+        background-color: #00000036;
         color: hsl(var(--hsl-c1));
         font-size: 14px;
         padding: 20px 10px
@@ -35015,7 +35063,9 @@
         background-color: #00000036;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
-        padding: 20px 10px
+        padding: 20px 10px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -35073,6 +35123,8 @@
     .osu-page--store,.osu-page--supporter {
         background-color: #00000036;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .osu-page--supporter {
@@ -35084,7 +35136,9 @@
         background-color: #00000036;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
-        font-size: 14px
+        font-size: 14px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .osu-page--wiki-main {
@@ -35351,7 +35405,8 @@
     @media (min-width: 900px) {
         .page-contents__sidebar {
             height:100%;
-            margin-left: 10px
+            margin-left: 10px;
+            padding-top: 110px;
         }
     }
 
@@ -35473,7 +35528,7 @@
 
     .page-image {
         align-items: center;
-        background-color: hsl(var(--hsl-b4));
+        background-color: #171719;
         display: flex;
         flex-direction: column;
         padding: 20px 10px;
@@ -36719,6 +36774,13 @@
             flex-direction: row;
             justify-content: space-between
         }
+    }
+
+    .profile-detail__separator {
+        --separator-size: 2px;
+        background-color: #1e1e1e;
+        height: var(--separator-size);
+        width: 100%;
     }
 
     @media (min-width: 900px) {
@@ -38606,6 +38668,7 @@
         text-decoration: none
     }
 
+
     .search-result--forum_post .search-entry {
         --border-colour: white
     }
@@ -38694,6 +38757,7 @@
     }
 
     .search-forum-post__poster {
+        color: white;
         display: inline-block;
         margin-right: 1em
     }
@@ -38847,6 +38911,7 @@
     }
 
     .search-result {
+        background-color: #1b1b1c;
         border-radius: 20px;
         box-shadow: 0 10px 20px rgba(0,0,0,.25);
         margin: 10px 0;
@@ -38902,6 +38967,7 @@
 
     .search-result__more-button {
         align-items: center;
+        color: white;
         display: inline-flex;
         flex: none;
         font-size: 20px;
@@ -39353,10 +39419,10 @@
     }
 
     .simple-form {
-        --input-bg: hsl(var(--hsl-b4));
+        --input-bg: rgb(30 30 31);
         display: flex;
         flex-wrap: wrap;
-        font-size: 12px
+        font-size: 12px;
     }
 
     .simple-form--modal {
@@ -39462,7 +39528,7 @@
     }
 
     .simple-form__info {
-        color: hsl(var(--hsl-c2));
+        color: white;
         font-weight: 400;
         margin: 0
     }
@@ -39470,7 +39536,7 @@
     .simple-form__input {
         background-color: var(--input-bg);
         border: none;
-        border-radius: 4px;
+        border-radius: 20px;
         color: hsl(var(--hsl-c1));
         display: inline-flex;
         flex: 1 0 auto;
@@ -39479,7 +39545,9 @@
         outline: none;
         padding: 5px 10px;
         resize: vertical;
-        width: 100%
+        width: 100%;
+        scrollbar-color: #8f8f8f #262626;
+        scrollbar-width: thin;
     }
 
     @media (min-width: 900px) {
@@ -40415,6 +40483,10 @@
         }
     }
 
+    .store-page--footer {
+        background-color: transparent;
+    }
+
     .store-page__option {
         margin: 0;
         text-transform: inherit
@@ -40785,19 +40857,19 @@
     }
 
     .supporter__block {
-        background-color: hsl(var(--hsl-b5))
+        background-color: transparent
     }
 
     .supporter__block--bg-0 {
-        background-color: hsl(var(--hsl-b4))
+        background-color: transparent
     }
 
     .supporter__block--bg-1 {
-        background-color: hsl(var(--hsl-b3))
+        background-color: transparent
     }
 
     .supporter__title {
-        color: hsl(var(--hsl-orange-1));
+        color: white;
         font-size: 24px;
         line-height: normal;
         margin: 0;
@@ -40822,7 +40894,7 @@
     }
 
     .supporter-eyecatch:before {
-        background: linear-gradient(to bottom,hsla(var(--hsl-b5),1) 4%,hsla(var(--hsl-b5),0) 100%)
+        background: linear-gradient(to bottom, #171719 4%, #444444 100%)
     }
 
     .supporter-eyecatch:after,.supporter-eyecatch:before {
@@ -40848,7 +40920,7 @@
     }
 
     .supporter-eyecatch__box {
-        background: hsl(var(--hsl-b4));
+        background: #171719;
         border-radius: 15px;
         height: 100%;
         margin: 10px 0;
@@ -40871,7 +40943,7 @@
     }
 
     .supporter-eyecatch__text {
-        color: hsl(var(--hsl-l1));
+        color: white;
         font-size: 16px;
         margin: 10px 0 0
     }
@@ -40888,7 +40960,7 @@
     }
 
     .supporter-eyecatch__text--sub-1 {
-        color: hsl(var(--hsl-f1));
+        color: white;
         margin-top: 0
     }
 
@@ -41020,7 +41092,7 @@
     .supporter-heart--active {
         animation: support-circle-pulsate .9375s ease-in-out infinite,support-circle-glow .9375s ease-in-out infinite;
         animation-fill-mode: none;
-        background-color: hsl(var(--hsl-pink-1));
+        background-color: transparent;
         opacity: 1
     }
 
@@ -41175,7 +41247,7 @@
     }
 
     .supporter-perk-list-group__text {
-        color: hsl(var(--hsl-f1));
+        color: white;
         padding: 10px
     }
 
@@ -41346,7 +41418,7 @@
     }
 
     .supporter-perk-list-image__text {
-        color: hsl(var(--hsl-f1));
+        color: white;
         margin-left: -20px;
         margin-top: 30px;
         padding: 10px
@@ -41500,12 +41572,16 @@
         color: #fff
     }
 
+    .supporter {
+        border-radius: 40px;
+    }
+
     .supporter-quote {
-        background-color: hsl(var(--hsl-b4));
-        box-shadow: 0 1px 3px rgba(0,0,0,.25),inset 0 2px 3px -1px rgba(0,0,0,.25);
+        background-color: transparent;
+        box-shadow: none;
         color: #fff;
         font-size: 14px;
-        padding: 30px
+        padding: 30px;
     }
 
     .supporter-quote__body {
@@ -41526,7 +41602,7 @@
     }
 
     .supporter-quote__quote-mark {
-        color: hsl(var(--hsl-b3));
+        color: white;
         font-size: 50px
     }
 
@@ -42334,9 +42410,11 @@
     }
 
     .tournament-list {
-        background-color: #00000014;
+        background-color: #00000036;
         font-weight: 300;
-        padding: 20px 10px
+        padding: 20px 10px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -42376,6 +42454,10 @@
         text-decoration: none;
         transition: 50ms ease-in-out;
         border-radius: 20px;
+    }
+
+    .tournament-list-item:hover {
+        background-color: rgb(131 131 133 / 9%);
     }
 
     .tournament-list-item:active,.tournament-list-item:focus,.tournament-list-item:hover {
@@ -44250,7 +44332,7 @@
 
     .wiki-page {
         display: grid;
-        scrollbar-color: hsla(0,0%,100%,.5) hsla(0,0%,100%,.025)
+        scrollbar-color: hsla(0,0%,100%,.5) hsla(0,0%,100%,.025);
     }
 
     .wiki-page,.wiki-page * {
@@ -44315,7 +44397,7 @@
             border-radius:0;
             margin: 0;
             max-height: calc(100vh - 50px);
-            overflow-y: scroll;
+            overflow-y: hidden;
             padding: 20px 30px 20px 50px;
             position: sticky;
             top: 50px
