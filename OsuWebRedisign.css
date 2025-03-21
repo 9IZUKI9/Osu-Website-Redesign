@@ -23805,7 +23805,9 @@
     .chat-conversation-list {
         -webkit-overflow-scrolling: touch;
         overflow-y: auto;
-        width: 270px
+        width: 270px;
+        background-color: #171719;
+        border-bottom-left-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -23827,7 +23829,7 @@
     }
 
     .chat-conversation-list__header {
-        background: #00000014;
+        background: #171719;
         color: hsl(var(--hsl-c1));
         display: flex;
         font-size: 12px;
