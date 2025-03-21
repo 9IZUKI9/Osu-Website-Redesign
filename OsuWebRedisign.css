@@ -19894,12 +19894,12 @@
     }
 
     .beatmap-scoreboard-table__cell {
-        background-color: var(--row-background-color);
+        background-color: transparent;
         border-radius: 20px;
     }
 
     .beatmap-scoreboard-table__body-row--menu-active .beatmap-scoreboard-table__cell,.beatmap-scoreboard-table__body-row:hover .beatmap-scoreboard-table__cell {
-        background-color: var(--row-background-color-highlight)
+        background-color: transparent;
     }
 
     .beatmap-scoreboard-table__cell:first-child {
