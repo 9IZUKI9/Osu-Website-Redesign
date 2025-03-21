@@ -23674,7 +23674,7 @@
 
     .chat-conversation {
         -webkit-overflow-scrolling: touch;
-        background: transparent;
+        background: #00000036;
         flex: 1;
         flex-direction: column;
         overflow-y: auto;
