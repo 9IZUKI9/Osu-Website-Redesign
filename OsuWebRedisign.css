@@ -14593,7 +14593,7 @@
     }
 
     .t-section .u-section--bg-normal {
-        background-color: white !important;
+        background-color: #333333 !important;
     }
 
     .t-section .u-section--color-hover:active,.t-section .u-section--color-hover:focus,.t-section .u-section--color-hover:hover {
