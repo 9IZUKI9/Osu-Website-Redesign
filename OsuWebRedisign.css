@@ -29703,8 +29703,8 @@
         --input-bg: hsl(var(--hsl-b6));
         --input-border-colour: var(--input-border-base-colour);
         --input-border-base-colour: transparent;
-        --input-border-hover-colour: hsl(var(--hsl-l3));
-        --input-border-focus-colour: hsl(var(--hsl-l1));
+        --input-border-hover-colour: #bbbbbb;
+        --input-border-focus-colour: #bbbbbb;
         --input-border-error-colour: hsl(var(--hsl-red-2));
         --input-border-error-focus-colour: hsl(var(--hsl-red-3));
         --input-padding: var(--label-height) var(--input-padding-right) var(--input-padding-base) var(--input-padding-base);
@@ -29808,6 +29808,7 @@
     }
 
     .input-container__label {
+        color: white;
         display: flex;
         font-size: var(--label-font-size);
         justify-content: space-between;
@@ -29823,7 +29824,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         background: none;
-        background: #1212123b;
+        background: #181819;
         border: none;
         border-radius: 20px;
         color: hsl(var(--hsl-c1));
@@ -41716,6 +41717,7 @@
     }
 
     .team-info-entry__value {
+        color: white;
         min-width: 0;
         font-weight: 600
     }
@@ -41726,7 +41728,7 @@
     }
 
     .team-members__type {
-        /* background-color: hsl(var(--hsl-b2)); */
+        background-color: transparent;
         border-radius: 10px;
         display: grid;
         gap: 5px;
@@ -41811,6 +41813,7 @@
     }
 
     .team-members-leaderboard-item__number-title {
+        color: white;
         font-size: 12px;
         font-weight: 600
     }
@@ -41898,9 +41901,9 @@
 
     .team-settings__description-preview {
         --padding: 10px;
-        background-color: rgb(34 34 34 / 46%);
-        border-radius: 6px;
-        padding: var(--padding) 0
+        background-color: rgb(24 24 25);
+        border-radius: 20px;
+        padding: var(--padding) 0;
     }
 
     .team-settings__errors {
