@@ -17112,7 +17112,7 @@
     }
 
     .bbcode-editor__content {
-        background-color: rgb(30 30 30 / 27%);
+        background-color: rgb(25 25 26);
         border-radius: 20px;
         display: flex;
         flex: 1;
@@ -19644,7 +19644,7 @@
 
     .beatmap-score-top__section {
         align-items: center;
-        background-color: #18181885;
+        background-color: #0b0b0b36;
         border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
@@ -23674,7 +23674,7 @@
 
     .chat-conversation {
         -webkit-overflow-scrolling: touch;
-        background: #00000014;
+        background: transparent;
         flex: 1;
         flex-direction: column;
         overflow-y: auto;
@@ -24257,8 +24257,8 @@
     }
 
     .chat-message-group__bubble {
-        background: #00000014;
-        border-radius: 4px;
+        background: #00000036;
+        border-radius: 20px;
         max-width: 400px;
         overflow-x: auto;
         padding: 5px 8px
@@ -26114,7 +26114,7 @@
     }
 
     .daily-challenge-popup {
-        background: hsl(var(--hsl-b4));
+        background: #171719;
         border-radius: 20px;
         font-size: 12px
     }
@@ -26130,11 +26130,12 @@
     }
 
     .daily-challenge-popup__content--top {
-        background: hsl(var(--hsl-b5));
+        background: #1c1c1e;
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: 2px solid #1c1c1c;
     }
 
     .daily-challenge-popup__row {
@@ -34966,10 +34967,12 @@
     }
 
     .osu-page--forum-topic-reply {
-        background-color: rgb(16 16 16 / 46%);
+        background-color: #171719;
         display: flex;
         flex-direction: column;
-        padding: 10px 15px
+        padding: 10px 15px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .osu-page--forum-topic-reply.js-forum-topic-reply-flash {
@@ -34986,7 +34989,8 @@
         bottom: 0;
         height: calc(var(--vh, 1vh)*100 - 50px);
         position: fixed;
-        z-index: 1
+        z-index: 1;
+        border-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -35020,6 +35024,8 @@
         background-color: #00000036;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .osu-page--info-bar {
@@ -35093,7 +35099,9 @@
         color: hsl(var(--hsl-c1));
         display: flex;
         flex: 1 0 auto;
-        height: calc(var(--vh, 1vh)*100 - 220px)
+        height: calc(var(--vh, 1vh)*100 - 220px);
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (max-width: 899px) {
@@ -35351,7 +35359,7 @@
         --outer-gutter: 2px;
         --padding-vertical: 20px;
         background-color: #29292926;
-        border-radius: 10px;
+        border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         font-size: 14px;
         margin: 0 var(--outer-gutter);
@@ -38141,7 +38149,8 @@
     }
 
     .score-beatmap {
-        padding: 10px
+        padding: 10px;
+        background-color: transparent;
     }
 
     @media (min-width: 900px) {
