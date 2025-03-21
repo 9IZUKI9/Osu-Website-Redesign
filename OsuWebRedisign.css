@@ -15006,7 +15006,7 @@
     }
 
     .account-edit {
-        background-color:#00000014;
+        background-color: #00000036;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -15262,7 +15262,7 @@
         background: none;
         background-color: #232323a6;
         border: 2px solid transparent;
-        border-radius: 4px;
+        border-radius: 20px;
         color: #fff;
         flex: 1;
         font-weight: 400;
