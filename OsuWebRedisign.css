@@ -2071,7 +2071,8 @@
     }
 
     .fa-bullhorn:before {
-        content: "\f0a1"
+        content: "\f0a1";
+        color: white
     }
 
     .fa-bullseye:before {
@@ -3935,7 +3936,8 @@
     }
 
     .fa-heart:before {
-        content: "\f004"
+        content: "\f004";
+        color: white
     }
 
     .fa-heart-broken:before {
@@ -5111,7 +5113,8 @@
     }
 
     .fa-plus:before {
-        content: "\f067"
+        content: "\f067";
+        color: #a1a1a1;
     }
 
     .fa-plus-circle:before {
@@ -12403,9 +12406,10 @@
     }
 
     .alert-danger {
-        background-color: #f2dede;
+        background-color: #1a1a1c;
         border-color: #ebccd1;
-        color: #a94442
+        color: #dedede;
+        border-radius: 20px;
     }
 
     .alert-danger hr {
@@ -17369,6 +17373,7 @@
     }
 
     .beatmap-discussion__discussion {
+        background-color: transparent;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex: 1;
@@ -17552,7 +17557,7 @@
     }
 
     .beatmap-discussion-editor {
-        background-color: hsl(var(--hsl-b4));
+        background-color: transparent;
         display: flex;
         flex-direction: column;
         scrollbar-color: hsla(0,0%,100%,.5) hsla(0,0%,100%,.025);
@@ -17624,7 +17629,7 @@
 
     .beatmap-discussion-editor__button-bar {
         align-items: center;
-        background: hsl(var(--hsl-b6));
+        background: transparent;
         border-radius: 0 0 4px 4px;
         display: flex;
         flex-direction: row;
@@ -17633,8 +17638,8 @@
     }
 
     .beatmap-discussion-editor__content {
-        background: hsl(var(--hsl-b5));
-        border-radius: 4px;
+        background: #00000014;
+        border-radius: 20px;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -17698,7 +17703,7 @@
     }
 
     .beatmap-discussion-editor-insertion-menu:before {
-        background: hsl(var(--hsl-b3));
+        background: #606060;
         border-radius: 4px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         content: "";
@@ -17710,7 +17715,7 @@
 
     .beatmap-discussion-editor-insertion-menu__body {
         align-items: center;
-        background: hsl(var(--hsl-b6));
+        background: #252525;
         border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-f1));
@@ -17742,7 +17747,7 @@
     }
 
     .beatmap-discussion-editor-insertion-menu__buttons {
-        background: hsl(var(--hsl-b6));
+        background: transparent;
         opacity: 0;
         position: absolute;
         transition: opacity .1s ease-in-out;
@@ -17849,11 +17854,12 @@
     }
 
     .beatmap-discussion-new {
-        background-color: #00000014;
+        background-color: #171719;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .beatmap-discussion-new__avatar {
@@ -17874,7 +17880,8 @@
         gap: 5px;
         justify-content: space-between;
         padding: 10px 20px;
-        border-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     @media (max-width: 899px) {
@@ -18029,7 +18036,7 @@
     }
 
     .beatmap-discussion-nominations {
-        background-color: hsl(0deg 0% 11.61%);
+        background-color: #00000014;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -18128,7 +18135,7 @@
     }
 
     .beatmap-discussion-post--new-reply {
-        background-color: hsl(var(--hsl-b5));
+        background-color: transparent;
         border-radius: 0 0 4px 4px;
         margin: 0
     }
@@ -18165,6 +18172,7 @@
         -moz-appearance: none;
         background: none;
         border: none;
+        color: white;
         font-size: 10px;
         margin: 0 5px;
         outline: none;
@@ -18706,7 +18714,7 @@
 
     .beatmap-discussion-user-card__user-modding-history-link {
         color: #fff;
-        color: hsl(var(--hsl-l1));
+        color: white;
         font-size: 10px;
         margin-left: 5px
     }
@@ -18752,6 +18760,18 @@
         padding-left: 5px
     }
 
+    .beatmap-discussion-vote--inactive {
+        color: #999999
+    }
+
+    .beatmap-discussion-vote--up, .beatmap-discussion-vote--up:hover {
+        color: white
+    }
+
+    .beatmap-discussion-vote--down, .beatmap-discussion-vote--down:hover {
+        color: white
+    }
+
     .beatmap-discussions {
         background-color: #00000014;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
@@ -18761,8 +18781,11 @@
     }
 
     .beatmap-discussions__discussions {
+        background-color: #00000036;
         padding: 10px 20px;
-        position: relative
+        position: relative;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .beatmap-discussions__discussions--empty {
@@ -18876,13 +18899,13 @@
     }
 
     .beatmap-discussions-header-bottom {
-        background-color: #1b1b1b;
+        background-color: #171719;
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
-        padding: 0 var(--gutter);
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        padding: 10px var(--gutter);
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -18935,7 +18958,7 @@
     .beatmap-discussions-header-top {
         --box-height: 50px;
         --gutter: 10px;
-        background-color: hsl(var(--hsl-b2));
+        background-color: transparent;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
     }
 
@@ -18951,7 +18974,7 @@
     }
 
     .beatmap-discussions-header-top__beatmap-stats {
-        background-color: #1b1b1b;
+        background-color: #171719;
         display: grid;
         grid-template-areas:
             "owners stats"
@@ -18978,7 +19001,7 @@
     }
 
     .beatmap-discussions-header-top__cover:after {
-        background-color: hsla(var(--hsl-b5),60%);
+        background-color: #3b3b3b21;
         content: "";
         height: 100%;
         left: 0;
@@ -20494,7 +20517,8 @@
 
     .beatmapset-discussions-chart:before {
         --border-size: 2px;
-        border-top: var(--border-size) solid hsl(var(--hsl-b3));
+        background-color: transparent;
+        border-top: var(--border-size) solid #7f7f7f;
         bottom: 0;
         content: "";
         height: calc(var(--border-size) + var(--icon-area-height));
@@ -20670,7 +20694,7 @@
     }
 
     .beatmapset-events__title {
-        color: hsl(var(--hsl-l1));
+        color: white;
         font-size: 15px;
         margin: 20px 0 5px
     }
@@ -21677,6 +21701,7 @@
     }
 
     .beatmapset-search-card__extra {
+        color: white;
         font-size: 12px
     }
 
@@ -35526,6 +35551,19 @@
         padding: 0 var(--inner-gutter) 20px
     }
 
+    .page-extra-tabs-before {
+        background-color: transparent;
+        height: 15px;
+        margin: auto
+    }
+    
+    @media (min-width: 900px) {
+        .page-extra-tabs-before {
+            max-width:960px;
+            width: calc(100% - 80px)
+        }
+    }
+
     .page-image {
         align-items: center;
         background-color: #171719;
@@ -35558,7 +35596,7 @@
     }
 
     .page-mode {
-        background-color: #00000014;
+        background-color: #171719;
         color: #ccc;
         display: block;
         font-size: 15px;
@@ -35950,6 +35988,7 @@
     }
 
     .page-title {
+        color: white;
         font-size: 15px;
         padding: 20px;
         position: relative
@@ -37845,6 +37884,7 @@
     }
 
     .quick-search-items--empty {
+        color: white;
         font-size: 16px
     }
 
