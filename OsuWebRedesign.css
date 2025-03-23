@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Osu!Website Redesign
-@namespace    github.com/9IZUKI9/Osu-Website-Redisign
-@homepageURL  https://github.com/9IZUKI9/Osu-Website-Redisign
+@namespace    github.com/9IZUKI9/Osu-Website-Redesign
+@homepageURL  https://github.com/9IZUKI9/Osu-Website-Redesign
 @version      18.03.2025
 @description  Complete redesign of the osu! website
 @author       -Izuki-
@@ -14562,13 +14562,13 @@
     }
 
     .bbcode pre {
-        background-color: hsl(var(--hsl-b5));
+        background-color: #00000036;
         border: none;
-        border-radius: 4px;
+        border-radius: 20px;
         color: inherit;
         font-size: inherit;
         padding: 10px;
-        white-space: pre-wrap
+        white-space: pre-wrap;
     }
 
     .bbcode .unordered {
