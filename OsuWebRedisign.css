@@ -36829,7 +36829,7 @@
 
     .profile-detail__separator {
         --separator-size: 1px;
-        background-color: hsl(var(--hsl-h1));
+        background-color: transparent;
         height: var(--separator-size);
         width: 100%;
     }
