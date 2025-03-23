@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://izuki.s-ul.eu/M0MCv2Xj" alt="">
+  <img src="https://izuki.s-ul.eu/6ZNpfq61" alt="">
 </div>
 <br>
 <div align="center"">
