@@ -15635,7 +15635,7 @@
 
     @media (min-width: 900px) {
         .artist__description--index {
-            margin-bottom:0
+            margin-bottom: 30px
         }
     }
 
@@ -15648,8 +15648,7 @@
         justify-content: space-around;
         overflow: hidden;
         padding: 10px;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
+        border-radius: 40px;
     }
 
     .artist__label-overlay {
@@ -15788,6 +15787,7 @@
         overflow: hidden;
         padding: 20px;
         border-radius: 40px;
+        margin-top: 20px;
     }
 
     .artist-album__badge {
@@ -17163,6 +17163,11 @@
         margin-left: 10px
     }
 
+    .forum-templates {
+        background-color: #272727 !important;
+        border-radius: 80% !important
+    }
+
     .bbcode-editor__input-title {
         -webkit-appearance: none;
         -moz-appearance: none;
@@ -17373,7 +17378,7 @@
     }
 
     .beatmap-discussion__discussion {
-        background-color: transparent;
+        background-color: #020203;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex: 1;
@@ -17858,8 +17863,8 @@
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex-direction: column;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .beatmap-discussion-new__avatar {
@@ -17880,8 +17885,8 @@
         gap: 5px;
         justify-content: space-between;
         padding: 10px 20px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (max-width: 899px) {
@@ -18295,7 +18300,7 @@
     }
 
     .beatmap-discussion-post__info {
-        color: hsl(var(--hsl-f1));
+        color: #cbcbcb;
         font-size: 10px;
         margin-right: 10px
     }
@@ -18632,9 +18637,9 @@
     }
 
     .beatmap-discussion-timestamp-decoration {
-        background-color: hsl(var(--hsl-b6));
+        background-color: #00000014;
         border-radius: 6px;
-        color: hsl(var(--hsl-f1));
+        color: #adadad;
         display: inline-block;
         font-size: 85%;
         font-weight: 600;
@@ -18773,11 +18778,11 @@
     }
 
     .beatmap-discussions {
-        background-color: #00000014;
+        background-color: transparent;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 40px;
     }
 
     .beatmap-discussions__discussions {
@@ -18816,7 +18821,7 @@
     }
 
     .beatmap-discussions__mode-circle {
-        background-color: hsl(var(--hsl-b6));
+        background-color: #505050;
         border-radius: 50%;
         height: 15px;
         overflow-anchor: none;
@@ -18828,7 +18833,7 @@
     }
 
     .beatmap-discussions__timeline-line {
-        background-color: hsl(var(--hsl-b6));
+        background-color: #505050;
         height: calc(100% - 35px);
         left: 20px;
         margin: 0 6px;
@@ -20435,8 +20440,6 @@
         background-position: 50%;
         background-size: auto auto;
         background-size: cover;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
         display: inline-flex;
         flex: none;
         height: 30px;
@@ -27999,6 +28002,11 @@
         }
     }
 
+    .send-message-button {
+        background-color: #272727 !important;
+        border-radius: 30% !important
+    }
+
     .forum-post-info__row--flag {
         display: flex;
         font-size: 20px;
@@ -31990,7 +31998,7 @@
     }
 
     .modding-profile-list__empty {
-        color: hsl(var(--hsl-f1));
+        color: #cbcbcb;
         margin-bottom: 10px
     }
 
@@ -32004,7 +32012,7 @@
     }
 
     .modding-profile-list__show-more {
-        color: hsl(var(--hsl-f1));
+        color: #cbcbcb;
         display: block;
         font-size: 12px;
         margin-top: 20px;
@@ -32023,8 +32031,8 @@
 
     .modding-profile-vote-card {
         align-items: center;
-        background: hsl(var(--hsl-b3));
-        border-radius: 4px;
+        background: #00000014;
+        border-radius: 20px;
         display: flex;
         flex: none;
         margin: 5px;
@@ -32089,7 +32097,7 @@
 
     .modding-profile-vote-card__user-stripe {
         align-self: stretch;
-        background-color: var(--group-colour,hsl(var(--hsl-b5)));
+        background-color: var(--group-colour,white);
         border-radius: 1px;
         flex: none;
         width: 2px
@@ -32114,7 +32122,7 @@
     }
 
     .modding-profile-vote-card__count {
-        color: hsl(var(--hsl-f1));
+        color: #cbcbcb;
         font-size: 9px
     }
 
@@ -35621,8 +35629,8 @@
     .page-mode--page-extra-tabs {
         border-bottom: 1px solid white;
         padding-top: 5px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px
     }
 
     @media (max-width: 899px) {
@@ -38690,11 +38698,11 @@
     }
 
     .search,.search-entry {
-        background-color: #00000014;
+        background-color: #00000036;
         display: flex;
         flex-direction: column;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
     }
 
     .search-entry {
@@ -38862,7 +38870,7 @@
     }
 
     .search-header {
-        background-color: #00000014;
+        background-color: #00000036;
         color: #ffffff;
         display: flex;
         flex-direction: column;
@@ -39145,7 +39153,7 @@
     }
 
     .search-wiki-page__more,.search-wiki-page__more:active,.search-wiki-page__more:focus,.search-wiki-page__more:hover {
-        color: hsl(var(--hsl-f1))
+        color: white
     }
 
     .select-options {
@@ -42886,8 +42894,8 @@
     }
 
     .user-card--active.user-card--has-outline:after,.user-card:hover.user-card--has-outline:after {
-        border: 2px solid white;
-        border-radius: 10px;
+        border: none;
+        border-radius: 20px;
         content: "";
         height: 100%;
         left: 0;
