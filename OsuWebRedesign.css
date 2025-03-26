@@ -21890,12 +21890,15 @@
     }
 
     .beatmapsets {
-        background-color: #00000014;
-        color: #fff
+        background-color: #171719;
+        color: #fff;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .beatmapsets__content {
-        padding: 5px 15px
+        padding: 5px 15px;
+        background-color: transparent;
     }
 
     .beatmapsets--dimmed .beatmapsets__content {
@@ -21939,13 +21942,15 @@
 
     .beatmapsets__toolbar {
         align-items: center;
-        background-color: #00000014;
+        background-color: #171719;
         display: flex;
         justify-content: space-between;
         padding: 0 20px
     }
 
     .beatmapsets-search {
+        background-color: #171719;
+        box-shadow: none;
         font-size: 13px;
         padding: 10px;
         position: relative
@@ -21984,8 +21989,9 @@
     }
 
     .beatmapsets-search__cover:after {
-        background-color: #1e1d1d69;
-        content: "";
+        background-color: #171719;
+        content: "ХУЙ";
+        color: #ffffff0f;
         height: 100%;
         left: 0;
         position: absolute;
