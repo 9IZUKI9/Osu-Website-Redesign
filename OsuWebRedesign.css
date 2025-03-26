@@ -2,7 +2,7 @@
 @name         Osu!Website Redesign
 @namespace    github.com/9IZUKI9/Osu-Website-Redesign
 @homepageURL  https://github.com/9IZUKI9/Osu-Website-Redesign
-@version      18.03.2025
+@version      27.03.2025
 @description  Complete redesign of the osu! website
 @author       -Izuki-
 ==/UserStyle== */
@@ -14183,7 +14183,7 @@
     }
 
     a {
-        color: #ffffff;
+        color: #888888;
         outline-style: none;
         text-decoration: none;
         transition: color 80ms linear;
@@ -14911,6 +14911,11 @@
         white-space: pre!important
     }
 
+    .js-usercard {
+        font-weight: 400;
+        color: white
+    }
+
     .u-embed-wide {
         aspect-ratio: 16/9;
         display: block;
@@ -15011,7 +15016,7 @@
     }
 
     .account-edit {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -15615,7 +15620,7 @@
     }
 
     .artist__description {
-        background-color: #171719;
+        background-color: #1d1d20;
         font-size: 14px;
         padding: 20px 10px;
         border-bottom-left-radius: 40px;
@@ -15641,7 +15646,7 @@
     }
 
     .artist__index {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex-direction: row;
@@ -15677,7 +15682,7 @@
 
     @media (min-width: 900px) {
         .artist__links-area {
-            background: #171719;
+            background: #1d1d20;
             box-shadow: 0 1px 3px rgba(0,0,0,.25);
             border-radius: 20px;
         }
@@ -15783,7 +15788,7 @@
 
     .artist-album {
         align-items: center;
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         overflow: hidden;
         padding: 20px;
@@ -17025,7 +17030,7 @@
     }
 
     .bbcode-editor--create {
-        background-color: #171719;
+        background-color: #1d1d20;
         padding: 15px 10px
     }
 
@@ -17139,7 +17144,7 @@
     }
 
     .bbcode-editor__content {
-        background-color: #1a1a1b;
+        background-color: #212126;
         border-radius: 20px;
         display: flex;
         flex: 1;
@@ -17203,7 +17208,7 @@
 
     .bbcode-size-select {
         align-items: center;
-        background-color: #292929a1;
+        background-color: #27272d;
         border-radius: 10000px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
@@ -17232,6 +17237,7 @@
         top: 0;
         width: 100%;
         color: white;
+        background-color: #27272d;
     }
 
     .bbcode-spoilerbox {
@@ -17861,7 +17867,7 @@
     }
 
     .beatmap-discussion-new {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex-direction: column;
@@ -18788,7 +18794,7 @@
     }
 
     .beatmap-discussions__discussions {
-        background-color: #171719;
+        background-color: #1d1d20;
         padding: 10px 20px;
         position: relative;
         border-bottom-left-radius: 40px;
@@ -18906,7 +18912,7 @@
     }
 
     .beatmap-discussions-header-bottom {
-        background-color: #171719;
+        background-color: #1d1d20;
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
@@ -18981,7 +18987,7 @@
     }
 
     .beatmap-discussions-header-top__beatmap-stats {
-        background-color: #171719;
+        background-color: #1d1d20;
         display: grid;
         grid-template-areas:
             "owners stats"
@@ -19498,14 +19504,14 @@
     }
 
     .beatmap-packs {
-        background-color: #171719;
+        background-color: #1d1d20;
         padding: 20px;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
     }
 
     .beatmap-packs-header {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: hsl(var(--hsl-c1));
         font-size: 14px;
         font-weight: 300;
@@ -21890,7 +21896,7 @@
     }
 
     .beatmapsets {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: #fff;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
@@ -21942,14 +21948,14 @@
 
     .beatmapsets__toolbar {
         align-items: center;
-        background-color: #171719;
+        background-color: #1d1d20;
         display: flex;
         justify-content: space-between;
         padding: 0 20px
     }
 
     .beatmapsets-search {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: none;
         font-size: 13px;
         padding: 10px;
@@ -21989,7 +21995,7 @@
     }
 
     .beatmapsets-search__cover:after {
-        background-color: #171719;
+        background-color: #1d1d20;
         content: "ХУЙ";
         color: #ffffff0f;
         height: 100%;
@@ -22581,7 +22587,7 @@
         --move: 0px;
         --inset-colour: hsl(var(--colour-h),var(--colour-s),calc(var(--colour-l) - 10%));
         align-items: center;
-        background-color: #27272775;
+        background-color: #212126;
         background-image: none;
         background-position: 50%;
         background-position: calc(50% + var(--bg-move)) 50%;
@@ -22605,7 +22611,7 @@
 
     .btn-home:active,.btn-home:focus,.btn-home:hover {
         color: #ffffffc2;
-        background: #7979792e
+        background: #24242a
     }
 
     .btn-home:focus {
@@ -22654,7 +22660,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         background: none;
-        background-color: #2d2d2db0;
+        background-color: #212126;
         border: none;
         border-radius: 10px;
         color: var(--colour);
@@ -22677,17 +22683,17 @@
     }
 
     .btn-osu-big:focus {
-        background-color: #3b3b3b78;
+        background-color: #24242a;
         color: var(--focus-colour)
     }
 
     .btn-osu-big:hover {
-        background-color: #3b3b3b78;
+        background-color: #24242a;
         color: var(--hover-colour)
     }
 
     .btn-osu-big:active {
-        background-color: #6e6a6a78;
+        background-color: #24242a;
         color: var(--active-colour)
     }
 
@@ -22697,7 +22703,7 @@
     }
 
     .btn-osu-big--disabled,.btn-osu-big--disabled:active,.btn-osu-big--disabled:focus,.btn-osu-big--disabled:hover,.btn-osu-big[disabled],.btn-osu-big[disabled]:active,.btn-osu-big[disabled]:focus,.btn-osu-big[disabled]:hover {
-        background-color: #a29e9e78;
+        background-color: #49495466;
         color: #c0c0c0;
     }
 
@@ -22860,6 +22866,7 @@
         --disabled-colour: hsl(var(--hsl-c1));
         --disabled-opacity: 0.5;
         --hover-bg: hsl(var(--hsl-lime-2));
+        background-color: #27272d;
         border-radius: 10000px;
         font-weight: 400;
         padding: 8px 20px;
@@ -23745,7 +23752,7 @@
 
     .chat-conversation {
         -webkit-overflow-scrolling: touch;
-        background: #171719;
+        background: #1d1d20;
         flex: 1;
         flex-direction: column;
         overflow-y: auto;
@@ -23877,7 +23884,7 @@
         -webkit-overflow-scrolling: touch;
         overflow-y: auto;
         width: 270px;
-        background-color: #171719;
+        background-color: #1d1d20;
         border-bottom-left-radius: 40px;
     }
 
@@ -23900,7 +23907,7 @@
     }
 
     .chat-conversation-list__header {
-        background: #171719;
+        background: #1d1d20;
         color: hsl(var(--hsl-c1));
         display: flex;
         font-size: 12px;
@@ -25063,14 +25070,14 @@
     }
 
     .contest {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: hsl(var(--hsl-c1));
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
     }
 
     .contest__description {
-        background-color: #171719;
+        background-color: #1d1d20;
         font-family: var(--font-content-override,var(--font-content));
         font-size: 14px;
         line-height: 1.35;
@@ -25582,7 +25589,7 @@
     }
 
     .contest-list {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: #fff;
         font-size: 14px;
         padding: 5px 10px
@@ -26129,7 +26136,7 @@
 
     .daily-challenge {
         align-items: center;
-        background: #171719;
+        background: #1d1d20;
         border: 2px solid transparent;
         border-radius: 610x;
         display: flex;
@@ -26197,7 +26204,7 @@
     }
 
     .daily-challenge-popup {
-        background: #171719;
+        background: #1d1d20;
         border-radius: 20px;
         font-size: 12px
     }
@@ -27032,14 +27039,13 @@
     }
 
     .footer {
-        background-color: #00000017;
+        background-color: #20202566;
         color: white;
         display: flex;
         flex: none;
         flex-direction: column;
         font-size: 10px;
         padding: 10px 0 5px;
-        border-radius: 70px;
     }
 
     .footer--landing {
@@ -27233,7 +27239,7 @@
     }
 
     .forum-cover-edit {
-        background-color: #171719;
+        background-color: #1d1d20;
         border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         font-size: 12px;
@@ -27345,7 +27351,7 @@
 
     .forum-item {
         --latest-post-colour: hsl(var(--hsl-c2));
-        background-color: #0f0f0f38;
+        background-color: #212126;
         border-radius: 20px;
         display: flex;
         font-size: 12px;
@@ -27356,7 +27362,7 @@
     }
 
     .forum-item:hover {
-        background-color: #00000029;
+        background-color: #232328;
     }
 
     @media (min-width: 900px) {
@@ -27426,6 +27432,11 @@
         .forum-item__latest-post {
             display:flex
         }
+    }
+
+    .u-ellipsis-overflow {
+        color: white;
+        font-weight: 400;
     }
 
     .forum-item__name {
@@ -27624,7 +27635,7 @@
     }
 
     .forum-poll {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
         display: flex;
@@ -27774,7 +27785,7 @@
     }
 
     .forum-post.js-forum-post--highlighted {
-        background-color: rgb(26 26 26 / 46%);
+        background-color: #1d1d20;
     }
 
     .forum-post__actions {
@@ -27972,7 +27983,7 @@
 
     .forum-post-info {
         align-items: center;
-        background-color: rgb(20 20 20 / 38%);
+        background-color: #1b1b1e;
         display: flex;
         flex: none;
         flex-direction: column;
@@ -28162,7 +28173,7 @@
     }
 
     .forum-topic-entry {
-        background-color: #0f0f0f38;
+        background-color: #212126;
         border-radius: 15px;
         color: white;
         display: flex;
@@ -28174,7 +28185,7 @@
     }
 
     .forum-topic-entry:hover {
-        background-color: #00000029;
+        background-color: #232328;
     }
 
     @media (min-width: 900px) {
@@ -28362,7 +28373,8 @@
         font-size: 14px;
         max-width: 100%;
         width: -moz-max-content;
-        width: max-content
+        width: max-content;
+        font-weight: 400;
     }
 
     .forum-topic-entry__title:active,.forum-topic-entry__title:focus,.forum-topic-entry__title:hover {
@@ -28797,7 +28809,7 @@
     }
 
     .forum-topic-toolbar {
-        background-color: #171719;
+        background-color: #1d1d20;
         display: flex;
         justify-content: flex-end;
         padding: 5px
@@ -29206,7 +29218,9 @@
         display: flex;
         gap: 2px 5px;
         padding: var(--header-nav-item-padding-y) 0;
-        position: relative
+        position: relative;
+        color: white;
+        font-weight: 400;
     }
 
     .header-nav-v4__link:before {
@@ -29633,13 +29647,13 @@
     }
 
     .header-v4__row--bar {
-        background-color: #171719;
+        background-color: #1d1d20;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
 
     .header-v4__row--title {
-        background-color: #171719;
+        background-color: #1d1d20;
         font-size: 14px;
         border: solid;
         border-radius: 40px;
@@ -30630,7 +30644,8 @@
     }
 
     .link--white,.link--white:active,.link--white:focus,.link--white:hover {
-        color: #fff
+        color: #fff;
+        font-weight: 400;
     }
 
     .link--no-underline,.link--no-underline:active,.link--no-underline:focus,.link--no-underline:hover {
@@ -30757,7 +30772,7 @@
 
     .livestream-page {
         padding: 20px 10px;
-        background-color: #171719;
+        background-color: #1d1d20;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
     }
@@ -31417,6 +31432,7 @@
     .menu-images__blur {
         transition: opacity .6s;
         will-change: opacity;
+        display: none;
     }
 
     .menu-images__blur:before {
@@ -31461,7 +31477,7 @@
         justify-content: center;
         overflow: hidden;
         position: relative;
-        background-color: #171719;
+        background-color: #1d1d20;
     }
 
     .menu-images__indicator {
@@ -32917,7 +32933,8 @@
         color: #fff;
         display: flex;
         padding: 10px;
-        text-decoration: none
+        text-decoration: none;
+        font-weight: 400;
     }
 
     .nav2__menu-link-main:active,.nav2__menu-link-main:focus,.nav2__menu-link-main:hover {
@@ -32992,7 +33009,7 @@
     }
 
     .nav2-header__menu-bg {
-        background-color: rgb(36 36 36 / 87%);
+        background-color: #1d1d20e6;
         box-shadow: 0 2px 10px rgba(0,0,0,.5);
         border-bottom: none;
         width: 1030px;
@@ -33014,7 +33031,7 @@
     }
 
     .nav2-header__transition-overlay {
-        background-color: #1f1f20;
+        background-color: #202025;
         width: 1030px;
         height: 55px;
         top: 50%;
@@ -33340,7 +33357,7 @@
     }
 
     .news-post-preview {
-        background-color: #11111157;
+        background-color: #212126;
         box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
         margin-bottom: 5px;
         border-radius: 20px;
@@ -34432,7 +34449,7 @@
     }
 
     .osu-layout--body,.osu-layout--body-landing {
-        background-color: #0a0a0deb;
+        background-color: #171719;
     }
 
     .osu-layout--body-landing:before {
@@ -34521,7 +34538,7 @@
 
     .osu-md code {
         color: white;
-        background-color: #141414;
+        background-color: #28282d;
         border-radius: 4px;
         padding: 1px 4px;
         font-weight: 1000
@@ -34850,6 +34867,11 @@
         margin-bottom: var(--paragraph-space)
     }
 
+    .osu-md__link {
+        color: white;
+        font-weight: 800
+    }
+
     .osu-md--store .osu-md__paragraph {
         margin-bottom: 10px
     }
@@ -34988,7 +35010,7 @@
     }
 
     .osu-page--artist-track-search-result {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
         padding: 10px;
@@ -35008,7 +35030,7 @@
     }
 
     .osu-page--changelog {
-        background-color: #171719;
+        background-color: #1d1d20;
         display: flex;
         flex-direction: column;
         border-bottom-left-radius: 40px;
@@ -35028,7 +35050,7 @@
     .osu-page--comment,.osu-page--comments {
         --comments-bg-hsl: var(--hsl-b5);
         --comments-fg: hsl(var(--hsl-c1));
-        background-color: #171719;
+        background-color: #1d1d20;
     }
 
     .osu-page--comments {
@@ -35047,7 +35069,7 @@
     }
 
     .osu-page--description {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: hsl(var(--hsl-c1));
         font-size: 14px;
         padding: 20px 10px
@@ -35061,7 +35083,7 @@
     }
 
     .osu-page--forum {
-        background-color: #171719;
+        background-color: #1d1d20;
         border: solid;
         border-radius: 40px;
         border-color: rgb(0 0 0 / 0%);
@@ -35070,12 +35092,12 @@
     }
 
     .osu-page--forum-topic {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: hsl(var(--hsl-c1));
     }
 
     .osu-page--forum-topic-reply {
-        background-color: #171719;
+        background-color: #1d1d20;
         display: flex;
         flex-direction: column;
         padding: 10px 15px;
@@ -35115,7 +35137,7 @@
     }
 
     .osu-page--generic {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
         padding: 20px 10px;
@@ -35131,7 +35153,7 @@
     }
 
     .osu-page--generic-compact {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
         border-bottom-left-radius: 40px;
@@ -35159,7 +35181,7 @@
     }
 
     .osu-page--ranking-info {
-        background-color: #171719;
+        background-color: #1d1d20;
         display: grid;
         font-size: 14px;
         gap: 20px;
@@ -35176,8 +35198,10 @@
     }
 
     .osu-page--store,.osu-page--supporter {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     .osu-page--supporter {
@@ -35187,7 +35211,7 @@
     }
 
     .osu-page--wiki {
-        background-color: #171719;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
         font-size: 14px;
@@ -35595,7 +35619,7 @@
 
     .page-image {
         align-items: center;
-        background-color: #171719;
+        background-color: #1d1d20;
         display: flex;
         flex-direction: column;
         padding: 20px 10px;
@@ -35625,7 +35649,7 @@
     }
 
     .page-mode {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: #ccc;
         display: block;
         font-size: 15px;
@@ -38723,7 +38747,7 @@
     }
 
     .search,.search-entry {
-        background-color: #171719;
+        background-color: #1d1d20;
         display: flex;
         flex-direction: column;
         border-bottom-right-radius: 40px;
@@ -38895,7 +38919,7 @@
     }
 
     .search-header {
-        background-color: #171719;
+        background-color: #1d1d20;
         color: #ffffff;
         display: flex;
         flex-direction: column;
@@ -39749,7 +39773,7 @@
     }
 
     .simple-menu {
-        background-color: rgb(36 36 36 / 87%);
+        background-color: #1d1d20e6;
         box-shadow: 0 2px 10px rgba(0,0,0,.5);
         border-radius: 20px;
         color: hsl(var(--hsl-c1));
@@ -39828,7 +39852,7 @@
         --item-hover-bg: hsl(var(--hsl-h1));
         --item-hover-colour: hsl(var(--hsl-b6));
         --stripe-bg: hsl(var(--hsl-b6));
-        background-color: #222222d4;;
+        background-color: #1d1d20e6;
         color: hsl(var(--hsl-c1));
         margin-top: 20px;
         padding: 10px;
@@ -39937,6 +39961,7 @@
         text-decoration: none;
         transition: none;
         white-space: nowrap;
+        font-weight: 500;
     }
 
     .simple-menu__item:hover {
@@ -40074,7 +40099,7 @@
     }
 
     .sort__item--button:active,.sort__item--button:focus,.sort__item--button:hover {
-        background-color: rgba(17, 17, 17, 0.459);
+        background-color: #212126;
         color: white;
     }
 
@@ -40089,7 +40114,7 @@
 
     .sort__item--active {
         --item-button-colour: hsl(var(--hsl-c1));
-        background-color: rgb(53 52 52 / 62%);
+        background-color: #232328;
         font-weight: 600
     }
 
@@ -40541,7 +40566,7 @@
 
     .store-page {
         font-size: 14px;
-        padding: 20px 10px
+        padding: 20px 10px;
     }
 
     @media (min-width: 900px) {
@@ -40679,7 +40704,10 @@
     .store-products {
         grid-gap: 10px;
         display: grid;
-        padding: 10px 10px 0
+        padding: 10px 10px 0;
+        background-color: #1d1d20;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
     @media (min-width: 900px) {
@@ -40900,7 +40928,7 @@
 
     .store-xsolla {
         align-items: center;
-        background-color: hsla(var(--hsl-b6),.5);
+        background-color: #27272d;
         color: hsl(var(--hsl-c1));
         display: flex;
         flex: none;
@@ -40909,7 +40937,8 @@
         margin-left: -10px;
         order: -1;
         text-align: right;
-        width: calc(100% + 20px)
+        width: calc(100% + 20px);
+        border-radius: 15px;
     }
 
     @media (min-width: 900px) {
@@ -40925,7 +40954,9 @@
         background-image: url(/assets/images/xsolla.d08493f2.png);
         background-size: contain;
         height: 40px;
-        width: 40px
+        width: 40px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     .store-xsolla__text {
@@ -40973,7 +41004,7 @@
     }
 
     .supporter-eyecatch:before {
-        background: linear-gradient(to bottom, #171719 4%, #444444 100%)
+        background: linear-gradient(to bottom, #1d1d20 4%, #444444 100%)
     }
 
     .supporter-eyecatch:after,.supporter-eyecatch:before {
@@ -41003,7 +41034,7 @@
     }
 
     .supporter-eyecatch__box {
-        background: #171719;
+        background: #1d1d20;
         border-radius: 15px;
         height: 100%;
         margin: 10px 0;
@@ -41384,7 +41415,7 @@
 
     .supporter-perk-list-hero__meta {
         align-self: center;
-        background-color: #171719;
+        background-color: #1d1d20;
         border-radius: 20px;
         padding: 10px;
         position: relative;
@@ -42497,7 +42528,7 @@
     }
 
     .tournament-list {
-        background-color: #171719;
+        background-color: #1d1d20;
         font-weight: 300;
         padding: 20px 10px;
         border-bottom-left-radius: 40px;
@@ -43498,7 +43529,7 @@
         box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
         display: flex;
         flex-direction: column;
-        background-color: #171719;
+        background-color: #1d1d20;
         border-radius: 40px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
@@ -43546,7 +43577,7 @@
     }
 
     .user-home__news-posts-group {
-        background-color: #11111157;
+        background-color: #212126;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: block;
         margin-bottom: 5px;
@@ -43584,7 +43615,7 @@
     }
 
     .user-home__right-sidebar {
-        background-color: #11111157;
+        background-color: #1c1c20;
         color: hsl(var(--hsl-c1));
         margin: 0;
         padding: 20px;
@@ -44303,7 +44334,7 @@
 
     .warning-box {
         align-items: center;
-        background-color: #222222;
+        background-color: #27272d;
         border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: hsl(var(--hsl-c1));
@@ -44319,7 +44350,7 @@
     .warning-box__icon {
         align-items: center;
         align-self: stretch;
-        background-color: #797979;
+        background-color: #2e2e35;
         border-radius: 20px 0 0 20px;
         display: flex;
         font-size: 20px;
@@ -44370,6 +44401,11 @@
         font-weight: 700
     }
 
+    .wiki-main-page__link {
+        color: #dbdbdb;
+        font-weight: 500;
+    }
+
     .wiki-main-page-panel {
         background: #5d5d6517;
         border-radius: 20px;
@@ -44386,7 +44422,7 @@
     }
 
     .wiki-notice {
-        background-color: #0000002b;
+        background-color: #1a1a1e;
         color: #ffffff;
         margin-bottom: 10px;
         padding: 10px 15px;
@@ -44599,7 +44635,9 @@
     .wiki-toc-list__link {
         display: inline-block;
         margin-bottom: 2px;
-        text-decoration: none
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
     }
 
     .wiki-toc-list__link:active,.wiki-toc-list__link:focus,.wiki-toc-list__link:hover {
