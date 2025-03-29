@@ -17,4 +17,4 @@ This is a dark theme for osu.ppy.sh with rounded corners, pleasant colors etc.
 
 # Preview
 
-<img src="https://izuki.s-ul.eu/HdbI6lKa" alt="">
+<img src="https://izuki.s-ul.eu/IBhFeJco" alt="">
