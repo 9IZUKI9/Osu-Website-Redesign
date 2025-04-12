@@ -2,7 +2,7 @@
 @name         Osu!Website Redesign
 @namespace    github.com/9IZUKI9/Osu-Website-Redesign
 @homepageURL  https://github.com/9IZUKI9/Osu-Website-Redesign
-@version      29.03.2025
+@version      13.04.2025
 @description  Complete redesign of the osu! website
 @author       -Izuki-
 ==/UserStyle== */
@@ -14583,8 +14583,8 @@
     }
 
     .bbcode .well {
-        background-color: #212126;
-        border: 2px solid #313139eb;
+        background-color: #16161be3;
+        border: 2px solid #212125eb;
         margin: 0;
         border-radius: 20px;
     }
@@ -14599,7 +14599,7 @@
     }
 
     .t-section .u-section--bg-normal {
-        background-color: #232328 !important;
+        background-color: white !important;
     }
 
     .t-section .u-section--color-hover:active,.t-section .u-section--color-hover:focus,.t-section .u-section--color-hover:hover {
@@ -16723,11 +16723,11 @@
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: block;
         flex: none;
-        height: 70px;
+        height: 25px;
         margin: 0;
         outline: none;
         padding: 0;
-        width: 70px
+        width: 25px
     }
 
     .avatar--beatmapset {
@@ -16788,7 +16788,10 @@
     }
 
     .avatar--guest {
-        background-image: url(/assets/images/avatar-guest.8a2df920.png)
+        background-image: url(/assets/images/avatar-guest.8a2df920.png);
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 10px !important;
     }
 
     @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution:1.5dppx) {
@@ -17064,6 +17067,16 @@
 
     .bbcode-editor--profile-page {
         padding-right: var(--inner-gutter)
+    }
+
+    .rr-modal {
+        background-color: #1d1d20 !important;
+        border-radius: 20px !important;
+    }
+
+    .form-select__input {
+        background-color: #212126;
+        border-radius: 10px;
     }
 
     .bbcode-editor__body {
@@ -18795,7 +18808,7 @@
     }
 
     .beatmap-discussions {
-        background-color: transparent;
+        background-color: #1d1d20;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
         flex-direction: column;
@@ -19163,7 +19176,7 @@
     }
 
     .beatmap-list__item--selected {
-        background-color: #262626b5;
+        background-color: #1d1d20;
         border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         box-shadow: 0 0 0 2px rgba(0,0,0,.25);
@@ -19175,7 +19188,7 @@
     }
 
     .beatmap-list__item--current,.beatmap-list__item--selected:hover {
-        background-color: #313131b5;
+        background-color: #202026;
     }
 
     .beatmap-list__item-count {
@@ -19720,7 +19733,7 @@
 
     .beatmap-score-top__section {
         align-items: center;
-        background-color: #0b0b0b36;
+        background-color: #1b1b1f;
         border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: flex;
@@ -20107,7 +20120,7 @@
     }
 
     .beatmap-success-rate {
-        background-color: #00000014;
+        background-color: #20202666;
         display: flex;
         flex-direction: column;
         font-size: 12px;
@@ -21045,6 +21058,10 @@
         padding: 0
     }
 
+    .beatmapset-info__header--sticky {
+        background-image: none;
+    }
+
     .beatmapset-info__link {
         overflow-wrap: break-word
     }
@@ -21161,7 +21178,7 @@
     @media (min-width: 900px) {
         .beatmapset-panel {
             --global-beatmap-link-pointer-events:auto;
-            --info-bg: linear-gradient(0.25turn, hsl(250.19deg 18.46% 18.19% / 77%), hsl(261.73deg 19.61% 60.53% / 47%));
+            --info-bg: linear-gradient(0.25turn, hsl(250.19deg 6.46% 12.84% / 77%), hsl(261.73deg 10.98% 13.9% / 47%));
             --menu-bg: hsl(var(--hsl-b3));
             --menu-container-width: 10px;
             --main-height: 100%;
@@ -21171,7 +21188,7 @@
         }
 
         .beatmapset-panel:hover {
-            --info-bg: linear-gradient(0.25turn, hsl(250.19deg 18.46% 18.19% / 77%), hsl(261.73deg 19.61% 60.53% / 47%));
+            --info-bg: linear-gradient(0.25turn, hsl(250.19deg 7.83% 15.29% / 77%), hsl(261.73deg 9.82% 16.61% / 47%));
             --menu-opacity: 1;
             --menu-container-width: 30px;
             --play-bg: transparent;
@@ -21204,7 +21221,7 @@
 
     @media (min-width: 900px) {
         .beatmapset-panel--beatmaps-popup-visible {
-            --info-bg:linear-gradient(0.25turn,hsl(var(--hsl-b4)),hsla(var(--hsl-b4),0.8));
+            --info-bg:linear-gradient(0.25turn, hsl(250.19deg 7.83% 15.29% / 77%), hsl(261.73deg 9.82% 16.61% / 47%));
             --menu-opacity: 1;
             --menu-container-width: 30px;
             --play-bg: hsla(var(--hsl-b6),0.8);
@@ -21767,7 +21784,7 @@
     .beatmapset-stats__row {
         -webkit-appearance: none;
         -moz-appearance: none;
-        background-color: #12121285;
+        background-color: #202026d9;
         border: none;
         border-radius: 20px;
         flex-direction: column;
@@ -21778,7 +21795,10 @@
 
     .beatmapset-stats__row--basic {
         padding-bottom: 10px;
-        padding-top: 10px
+        padding-top: 10px;
+        margin-top: 5px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     .beatmapset-stats__row--preview {
@@ -21791,7 +21811,8 @@
         justify-content: center;
         padding: 10px;
         position: relative;
-        text-decoration: none
+        text-decoration: none;
+        margin-top: 5px;
     }
 
     .beatmapset-stats__row--preview:active,.beatmapset-stats__row--preview:focus,.beatmapset-stats__row--preview:hover {
@@ -21803,9 +21824,16 @@
         background-color: #26262685
     }
 
+    .beatmapset-stats__row--advanced {
+        border-radius: 0;
+    }
+
     .beatmapset-stats__row--rating {
         padding-bottom: 0;
-        padding-top: 10px
+        padding-top: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-bottom: 20px;
     }
 
     .beatmapset-status {
@@ -22422,7 +22450,7 @@
     }
 
     .btn-circle--bbcode:active,.btn-circle--bbcode:focus,.btn-circle--bbcode:hover {
-        background-color: #5a5a5a
+        background-color: #262634;
     }
 
     .btn-circle--blank {
@@ -22754,8 +22782,8 @@
     }
 
     .btn-osu-big--chat-send {
-        --bg: hsl(var(--hsl-h2));
-        --hover-bg: hsl(var(--hsl-h1));
+        --bg: #28282e !important;
+        --hover-bg: #30303a !important;
         align-self: flex-end;
         border-radius: 10000px;
         min-width: 80px;
@@ -22884,7 +22912,7 @@
     }
 
     .btn-osu-big--forum-reply {
-        --bg: hsl(var(--hsl-l4));
+        --bg: #262634;
         --focus-bg: hsl(var(--hsl-l4));
         --hover-bg: hsl(var(--hsl-l3));
         border-radius: 10000px;
@@ -23975,7 +24003,7 @@
 
     @media (min-width: 900px) {
         .chat-conversation-list-item:hover {
-            background: linear-gradient(to right, #93939329 ,#bdbdbd08 50%);
+            background: linear-gradient(to right, #2a2a3b9c, #22222b59 50%);
             border-radius: 20px;
         }
     }
@@ -23988,14 +24016,14 @@
     }
 
     .chat-conversation-list-item--selected {
-        background: linear-gradient(to right, #ffffff29 ,#ffffff08 50%);
+        background: linear-gradient(to right, #2a2a3b9c, #22222b59 50%);
         color: #fff;
         border-radius: 20px
     }
 
     @media (max-width: 899px) {
         .chat-conversation-list-item--selected {
-        background: linear-gradient(to right, #ffffff29 ,#ffffff08 50%);
+        background: linear-gradient(to right, #2a2a3b9c, #22222b59 50%);
         color: #fff;
         }
     }
@@ -24239,7 +24267,7 @@
 
     .chat-input {
         align-items: center;
-        background: #212126;
+        background: transparent;
         bottom: 0;
         color: #fff;
         display: flex;
@@ -24247,7 +24275,6 @@
         position: absolute;
         text-align: right;
         width: calc(100% - 20px);
-        border-radius: 20px;
         height: 60px
     }
 
@@ -24263,7 +24290,7 @@
     .chat-input__box {
         -webkit-appearance: none;
         -moz-appearance: none;
-        background: #00000026;
+        background: #212126;
         border: none;
         border-radius: 20px;
         flex: 1;
@@ -24282,10 +24309,11 @@
     }
 
     .chat-join-channel {
-        background: hsl(var(--hsl-b4));
+        background: #1d1d20;
         display: flex;
         flex-direction: column;
-        height: 100%
+        height: 100%;
+        border-bottom-right-radius: 40px;
     }
 
     .chat-join-channel__channel {
@@ -24293,7 +24321,7 @@
         -moz-appearance: none;
         background: none;
         border: none;
-        color: hsl(var(--hsl-l3));
+        color: #cfcfcf;
         display: grid;
         grid-column: span 3;
         grid-template-columns: subgrid;
@@ -24305,7 +24333,7 @@
     }
 
     .chat-join-channel__channel:active,.chat-join-channel__channel:focus,.chat-join-channel__channel:hover {
-        background-color: hsl(var(--hsl-b3));
+        background-color: #1e1e21;
         color: hsl(var(--hsl-c1));
         text-decoration: none
     }
@@ -26049,7 +26077,7 @@
     }
 
     .counter-box {
-        background-color: #19191994;
+        background-color: #1d1d20;
         border-radius: 15px;
         box-shadow: 0 0 0 2px hsla(var(--hsl-b5),.25);
         color: hsl(var(--hsl-c1));
@@ -26316,8 +26344,8 @@
     }
 
     .dialog-form__button {
-        --bg: hsl(var(--hsl-blue-3));
-        --bg-hover: hsl(var(--hsl-blue-2));
+        --bg: #25252a;
+        --bg-hover: #28282f;
         -webkit-appearance: none;
         -moz-appearance: none;
         background: none;
@@ -26341,8 +26369,8 @@
     }
 
     .dialog-form__button--cancel {
-        --bg: hsl(var(--hsl-red-3));
-        --bg-hover: hsl(var(--hsl-red-2))
+        --bg: #25252a;
+        --bg-hover: #28282f
     }
 
     .dialog-form__button[disabled] {
@@ -26364,8 +26392,8 @@
     }
 
     .dialog-form__dialog {
-        background-color: hsl(var(--hsl-b4));
-        border-radius: 6px;
+        background-color: #1d1d20;
+        border-radius: 40px;
         display: flex;
         flex-direction: column;
         max-width: 100%;
@@ -26377,7 +26405,7 @@
         -moz-appearance: none;
         background: none;
         border: none;
-        color: hsl(var(--hsl-l2));
+        color: #c6c6d4;
         cursor: pointer;
         display: inline;
         margin: 0;
@@ -26386,8 +26414,8 @@
     }
 
     .dialog-form__extra-link:active,.dialog-form__extra-link:focus,.dialog-form__extra-link:hover {
-        color: hsl(var(--hsl-l1));
-        text-decoration: underline
+        color: #9d9dab;
+        text-decoration: none
     }
 
     .dialog-form__extra-link--small {
@@ -26396,7 +26424,7 @@
 
     .dialog-form__header-overlay {
         background-color: rgba(0,0,0,.75);
-        border-radius: 6px 6px 0 0;
+        border-radius: 40px 40px 0 0;
         height: 100%;
         left: 0;
         position: absolute;
@@ -26482,7 +26510,7 @@
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 6px 6px 0 0;
+        border-radius: 40px 40px 0 0;
         display: inline-flex;
         height: 200px;
         justify-content: center;
@@ -27128,8 +27156,8 @@
 
     .form-select {
         align-items: baseline;
-        background-color: hsl(var(--hsl-b6));
-        border-radius: 4px;
+        background-color: #212126;
+        border-radius: 15px;
         color: hsl(var(--hsl-c1));
         display: flex;
         font-size: 16px;
@@ -27151,8 +27179,8 @@
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         align-items: center;
-        background-color: inherit;
-        border-radius: inherit;
+        background-color: #212126;
+        border-radius: none;
         content: "\f078";
         display: inline-block;
         display: inline-flex;
@@ -27190,9 +27218,9 @@
 
     .form-select__input {
         background: none;
-        background-color: inherit;
+        background-color: #212126 !important;
         border: none;
-        border-radius: inherit;
+        border-radius: 15px !important;
         flex: 1;
         max-width: 100%;
         padding: 5px calc(20px + 1em) 5px 5px
@@ -28848,7 +28876,7 @@
     }
 
     .forum-user-badge {
-        background-color: #72727245;
+        background-color: #262634;
         border-radius: 10000px;
         color: white;
         font-size: 8px;
@@ -34008,7 +34036,8 @@
         left: 0;
         position: absolute;
         top: 0;
-        width: 100%
+        width: 100%;
+        background-color: #00000014;
     }
 
     .notification-popup-item__main {
@@ -34610,7 +34639,7 @@
     }
 
     .osu-md--chat-action {
-        color: hsl(var(--hsl-l1));
+        color: #ccc;
         font-style: italic
     }
 
@@ -36806,7 +36835,8 @@
         outline: none;
         padding: 0 0 26.66666667%;
         position: relative;
-        width: 100%
+        width: 100%;
+        border-radius: 8px;
     }
 
     .profile-cover-selection__selected {
@@ -36840,7 +36870,7 @@
 
     .profile-detail {
         --gutter: 10px;
-        background-color: #161619fa;
+        background-color: #18181bfa;
         display: grid;
         gap: 10px;
         padding: 10px var(--gutter)
@@ -36978,8 +37008,8 @@
     }
 
     .profile-edit-popup {
-        background: hsl(var(--hsl-b6));
-        border-radius: 4px;
+        background: #1c1c20;
+        border-radius: 20px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         display: grid;
         gap: 10px;
@@ -37633,7 +37663,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         background: none;
-        background-color: hsl(var(--hsl-b3));
+        background-color: #26262b;
         border: none;
         border-radius: 10000px;
         color: hsl(var(--hsl-c1));
@@ -37644,7 +37674,7 @@
     }
 
     .profile-page-button__button:hover {
-        background-color: hsl(var(--hsl-b2))
+        background-color: #2b2b31
     }
 
     .profile-page-button__button[disabled] {
@@ -37821,7 +37851,7 @@
     }
 
     .qtip--achievement {
-        background-color: #27272d;
+        background-color: #1f1f24;
         border: 0 solid transparent;
         border-radius: 30px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
@@ -38156,13 +38186,13 @@
     }
 
     .ranking-page-table__column:first-child {
-        border-bottom-left-radius: 4px;
-        border-top-left-radius: 4px
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px
     }
 
     .ranking-page-table__column:last-child {
-        border-bottom-right-radius: 4px;
-        border-top-right-radius: 4px
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px
     }
 
     .ranking-page-table__row {
@@ -39300,17 +39330,17 @@
     }
 
     .select-options__option:active,.select-options__option:focus,.select-options__option:hover {
-        background-color: #232328;
+        background-color: #202026;
         color: var(--colour)
     }
 
     .select-options__select {
-        --option-hover-bg: #00000014;
+        --option-hover-bg: transparent;
         --option-padding: var(--option-select-padding);
-        background-color: #212126;
+        background-color: #212126 !important;
         border-radius: 20px;
-        box-shadow: 0 1px 3px #00000014;
-        box-shadow: 0 0 0 2px #00000014;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+        box-shadow: 0 1px 3px 0px rgba(0, 0, 0, .25) !important;
         font-size: 15px;
         overflow: hidden
     }
@@ -39659,7 +39689,7 @@
     }
 
     .simple-form__input {
-        background-color: var(--input-bg);
+        background-color: #212126;
         border: none;
         border-radius: 20px;
         color: hsl(var(--hsl-c1));
@@ -39915,7 +39945,7 @@
     }
 
     .simple-menu__extra {
-        background-color: rgb(113 106 106 / 6%);
+        background-color: #1d1d20e6;
         display: flex;
         flex-direction: column;
         margin: -10px -5px 10px;
@@ -42061,7 +42091,7 @@
         display: grid;
         font-size: 14px;
         gap: 2px 10px;
-        grid-template-columns: 1fr auto auto auto;
+        grid-template-columns: 1fr auto auto auto auto;
         list-style-type: none;
         margin: 0;
         padding: 0
@@ -42411,7 +42441,7 @@
     }
 
     .tooltip-achievement__instructions {
-        color: hsl(var(--hsl-l1));
+        color: #ccc;
         font-size: 14px;
         font-weight: 300
     }
