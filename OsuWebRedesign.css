@@ -2,7 +2,7 @@
 @name         Osu!Website Redesign
 @namespace    github.com/9IZUKI9/Osu-Website-Redesign
 @homepageURL  https://github.com/9IZUKI9/Osu-Website-Redesign
-@version      18.04.2025
+@version      26.04.2025
 @description  Complete redesign of the osu! website
 @author       -Izuki-
 ==/UserStyle== */
@@ -5324,7 +5324,7 @@
     }
 
     .bbcode code {
-        background-color: hsl(var(--hsl-b5));
+        background-color: #24242a;
         border-radius: 4px;
         padding: 1px 4px
     }
@@ -5409,8 +5409,8 @@
     }
 
     .bbcode .well {
-        background-color: #1a1a1fe3;
-        border: 2px solid #212125eb;
+        background-color: #29292fa3;
+        border: 2px solid #32323deb;
         margin: 0;
         border-radius: 20px;
     }
@@ -5926,7 +5926,7 @@
 
     @media (min-width: 900px) {
         .account-edit-entry--block,.account-edit-entry--no-label {
-            padding-left:160px
+            padding-left: 110px
         }
     }
 
@@ -5944,7 +5944,7 @@
     }
 
     .account-edit-entry__avatar {
-        border-radius: 4px;
+        border-radius: 20px;
         height: 128px;
         margin-bottom: 10px;
         overflow: hidden;
@@ -6177,7 +6177,8 @@
     }
 
     .account-edit-entry--wide .account-edit-entry__misc-info {
-        max-width: 400px
+        max-width: 400px;
+        max-height: 1000px;
     }
 
     .account-edit-entry__overlay-spinner {
@@ -7790,7 +7791,7 @@
     }
 
     .bar--forum-poll .bar__fill {
-        background-color: hsl(var(--hsl-h1));
+        background-color: #ccc;
         border-radius: 10000px;
         opacity: .5
     }
@@ -10432,14 +10433,16 @@
 
     .beatmap-playcount__detail {
         align-items: center;
-        background: linear-gradient(0.25turn, hsl(0deg 0.26% 12.52%), hsl(0deg 0% 25.68% / 80%));
-        border-radius: 6px;
+        background: linear-gradient(0.25turn, hsl(240deg 6.67% 11.76%), hsl(240deg 7.26% 14.98%));
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
         display: flex;
         flex: 1;
         margin-left: -6px;
         min-width: 0;
         padding: 0 10px;
-        position: relative
+        position: relative;
+
     }
 
     .beatmap-playcount:hover .beatmap-playcount__detail {
@@ -10455,6 +10458,11 @@
         .beatmap-playcount__detail-count {
             display:flex
         }
+    }
+
+    .beatmap-playcount__background {
+        border-bottom-right-radius: 20px !important;
+        border-top-right-radius: 20px !important;
     }
 
     .beatmap-playcount__info {
@@ -11832,6 +11840,10 @@
     .beatmapset-info__box--success-rate {
         padding-top: 0;
         padding-bottom: 10px
+    }
+
+    .beatmapset-info__scrollable:after {
+        background-image: none;
     }
 
     .beatmapset-info__edit-button {
@@ -13565,7 +13577,8 @@
     }
 
     .btn-osu-big--account-edit {
-        min-width: 128px;
+        min-width: 140px;
+        height: 32px;
         overflow: hidden;
         padding: 7px 10px;
         position: relative;
@@ -13628,7 +13641,7 @@
 
     .btn-osu-big--contest-entries-toolbar {
         --bg: transparent;
-        --colour: hsl(var(--hsl-f1));
+        --colour: #ccc;
         --hover-bg: hsl(var(--hsl-b3));
         font-size: inherit;
         line-height: normal;
@@ -15516,7 +15529,7 @@
     }
 
     .comment__main--clip .comment__message:after {
-        background-image: linear-gradient(to bottom,hsla(var(--comments-bg-hsl),0),hsl(var(--comments-bg-hsl)));
+        background-image: linear-gradient(to bottom, hsl(255deg 1.52% 34.18% / 0%), hsl(240deg 7.25% 16.04%));
         bottom: 0;
         content: "";
         display: block;
@@ -15528,12 +15541,12 @@
     }
 
     .comment__owner-badge {
-        background-color: #b3b3b3;
+        background-color: #262634;
         border-radius: 10000px;
         bottom: 2px;
-        color: hsl(var(--hsl-b6));
+        color: white;
         font-size: 10px;
-        font-weight: 700;
+        font-weight: 400;
         padding: 2px 5px
     }
 
@@ -15602,7 +15615,7 @@
         -moz-appearance: none;
         background: none;
         border: none;
-        color: hsl(var(--hsl-l2));
+        color: white;
         margin: 0;
         outline: none;
         padding: 5px 0;
@@ -15611,7 +15624,7 @@
     }
 
     .comment__toggle-clip:active,.comment__toggle-clip:focus,.comment__toggle-clip:hover {
-        color: hsl(var(--hsl-l1))
+        color: #ccc;
     }
 
     .comment__toolbar {
@@ -15647,7 +15660,7 @@
     .comment-editor {
         --bg: #212126;
         background: var(--bg);
-        border-radius: 6px;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         position: relative
@@ -15755,7 +15768,7 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         background: none;
-        background-color: hsl(var(--hsl-b6));
+        background-color: #212126;
         border: 2px solid transparent;
         border-radius: 100000px;
         display: flex;
@@ -15955,7 +15968,7 @@
     }
 
     .contest__countdown-timer {
-        background-color: hsl(var(--hsl-b4));
+        background-color: #1d1d20;
         margin-top: -10px;
         padding-bottom: 20px
     }
@@ -16021,7 +16034,7 @@
 
     .contest__vote-summary-text {
         align-items: center;
-        color: hsl(var(--hsl-f1));
+        color: #ccc;
         display: flex;
         float: right;
         font-weight: 700;
@@ -16201,7 +16214,7 @@
     }
 
     .contest-art-entry__result-votes {
-        color: hsl(var(--hsl-f1));
+        color: #ccc;
         font-size: 10px
     }
 
@@ -16212,7 +16225,8 @@
         height: calc(var(--thumbnail-size)*var(--thumbnail-scale)*var(--thumbnail-height-multiplier));
         margin: auto;
         position: relative;
-        width: 100%
+        width: 100%;
+        border-radius: 10px;
     }
 
     .contest-art-entry__thumbnail-link {
@@ -16614,13 +16628,15 @@
     }
 
     .contest-userentry {
-        background: hsl(var(--hsl-b4));
+        background: #212126;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         height: 150px;
-        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
         transition: .2s cubic-bezier(.68,-.55,.27,1.55);
-        width: calc(50% - 20px)
+        width: calc(50% - 20px);
+        border-radius: 30px;
     }
 
     .contest-userentry--disabled {
@@ -16632,7 +16648,7 @@
     }
 
     .contest-userentry--dragndrop-hover.contest-userentry--new,.contest-userentry--new:hover {
-        background-color: hsl(var(--hsl-b3));
+        background-color: #24242a;
         transform: scale(1.01)
     }
 
@@ -16872,8 +16888,9 @@
     }
 
     .countdown-timer__field {
-        border: 5px solid hsl(var(--hsl-b5));
-        border-radius: 5px;
+        background-color: #212126;
+        border: 5px solid #212126;
+        border-radius: 15px;
         box-shadow: 0 1px 3px rgba(0,0,0,.25);
         color: #fff;
         display: inline-block;
@@ -16883,14 +16900,15 @@
     }
 
     .countdown-timer__digit {
-        background: hsl(var(--hsl-b6));
+        background: #27272d;
         font-size: 24px;
-        line-height: 50px
+        line-height: 50px;
+        border-radius: 15px;
     }
 
     .countdown-timer__label {
-        background: hsl(var(--hsl-b5));
-        color: hsl(var(--hsl-f1));
+        background: #212126;
+        color: white;
         font-size: 12px;
         line-height: 14px
     }
@@ -17670,8 +17688,8 @@
     }
 
     .fancy-graph__circle {
-        stroke: hsl(var(--hsl-h1));
-        fill: hsl(var(--hsl-h1));
+        stroke: white;
+        fill: white;
         stroke-width: 1px;
         pointer-events: none
     }
@@ -17683,7 +17701,7 @@
 
     .fancy-graph__line {
         fill: none;
-        stroke: hsl(var(--hsl-h1));
+        stroke: white;
         stroke-width: 1px
     }
 
@@ -18054,9 +18072,9 @@
 
     .form-text {
         background: none;
-        background-color: hsl(var(--hsl-b6));
+        background-color: #212126;
         border: none;
-        border-radius: 4px;
+        border-radius: 20px;
         color: hsl(var(--hsl-c1));
         font-size: 16px;
         padding: 5px;
@@ -18544,7 +18562,7 @@
     }
 
     .forum-poll__detail--sub {
-        color: hsl(var(--hsl-c2));
+        color: #ccc;
         font-size: 10px
     }
 
@@ -21401,7 +21419,7 @@
 
     .line-chart--profile-page .line-chart__hover-circle {
         background-color: hsl(var(--hsl-b5));
-        border-color: #fc2;
+        border-color: white;
         border-radius: 50%;
         border-width: 4px;
         height: 20px;
@@ -21420,7 +21438,7 @@
     }
 
     .line-chart--profile-page .line-chart__hover-line {
-        background-color: #fc2;
+        background-color: white;
         left: -1px;
         width: 2px
     }
@@ -21463,7 +21481,7 @@
     }
 
     .line-chart--profile-page .line-chart__line {
-        stroke: #fc2;
+        stroke: white;
         stroke-width: 2px
     }
 
@@ -24400,7 +24418,7 @@
 
     .news-sidebar-years {
         grid-gap: 5px;
-        background-color: #0000001f;
+        background-color: #23232870;
         border-radius: 20px;
         display: grid;
         font-size: 12px;
@@ -24493,7 +24511,8 @@
     }
 
     .notification-action-button--fancy:hover {
-        background-color: rgba(0,0,0,.15)
+        background-color: rgba(0,0,0,.15);
+        border-radius: 0px 20px 20px 0px;
     }
     
     .notification-action-button--fancy:before {
@@ -24551,8 +24570,8 @@
     }
 
     .notification-banner-v2--info {
-        --divider-colour: hsl(var(--hsl-blue-2));
-        background-color: hsla(var(--hsl-blue-3),.2)
+        --divider-colour: white;
+        background-color: #212126
     }
 
     .notification-banner-v2__col {
@@ -24867,6 +24886,7 @@
         top: 0;
         width: 100%;
         background-color: #00000014;
+        border-radius: 20px;
     }
 
     .notification-popup-item__main {
@@ -24915,11 +24935,11 @@
     }
 
     .notification-popup-item:hover .notification-popup-item__row .show-more-link {
-        background-color: #8a8a8a85;
+        background-color: #212126;
     }
 
     .notification-popup-item:hover .notification-popup-item__row .show-more-link:hover {
-        background-color: #454545
+        background-color: #24242a
     }
 
     .notification-popup-item__unread-stripe {
@@ -24966,7 +24986,7 @@
     }
 
     .notification-stacks {
-        grid-gap: 2px;
+        grid-gap: 10px;
         display: grid;
         grid-template-columns: minmax(0,1fr)
     }
@@ -25287,7 +25307,9 @@
     }
 
     .order-line-items__item--main:nth-child(odd) {
-        background-color: hsl(var(--hsl-b4))
+        background-color: #212126;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
     .order-line-items__item--footer {
@@ -25295,7 +25317,9 @@
     }
 
     .order-line-items__item--footer-total {
-        background-color: hsla(var(--hsl-orange-2),25%)
+        background-color: #212126;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     .order-line-items--checkout .order-line-items__item--footer-total {
@@ -25407,7 +25431,7 @@
     }
 
     .osu-md code {
-        color: white;
+        color: #ccc;
         background-color: #28282d;
         border-radius: 4px;
         padding: 1px 4px;
@@ -25441,7 +25465,7 @@
     }
 
     .osu-md pre {
-        background-color: #00000026;
+        background-color: #212126;
         border: none;
         border-radius: 20px;
         color: hsl(var(--hsl-l1))
@@ -25586,8 +25610,6 @@
     }
 
     .osu-md__image {
-        width: 20px;
-        height: 20px;
         margin-right: 10px
     }
 
@@ -26510,7 +26532,7 @@
     }
 
     .page-image__image {
-        border-radius: 6px;
+        border-radius: 30px;
         flex: none;
         max-width: 100%
     }
@@ -26532,8 +26554,9 @@
         list-style: none;
         margin: 0;
         overflow: hidden;
-        padding: 20px 10px 0;
-        text-align: center
+        text-align: center;
+        width: 580px;
+        border-radius: 20px;
     }
 
     @media (max-width: 899px) {
@@ -26546,8 +26569,8 @@
     .page-mode--page-extra-tabs {
         border-bottom: 1px solid white;
         padding-top: 5px;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px
+        border-radius: 40px 40px 0px 0px;
+        width: auto;
     }
 
     @media (max-width: 899px) {
@@ -26566,13 +26589,14 @@
         font-size: 14px;
         gap: 20px;
         overflow-x: auto;
-        padding: 20px
+        padding: 20px;
     }
 
     @media (min-width: 900px) {
         .page-mode--profile-page-extra {
-            padding-left: 50px;
-            padding-right: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 50px;
         }
     }
 
@@ -26585,6 +26609,7 @@
 
     .page-mode--search {
         background: transparent;
+        width: 700px;
         border-bottom: 1px solid;
         -o-border-image: linear-gradient(90deg,transparent,#fff,transparent) 1;
         border-image: linear-gradient(90deg,transparent,#fff,transparent) 1;
@@ -26823,7 +26848,8 @@
         top: 0;
         transition: all .12s ease-in-out;
         width: 100%;
-        will-change: opacity
+        will-change: opacity;
+        border-radius: 20px;
     }
 
     .page-nav-fancy:hover:before {
@@ -28288,7 +28314,7 @@
 
     .profile-info__icon--supporter {
         align-items: center;
-        background-color: hsl(var(--hsl-pink-1));
+        background-color: #363648;
         border-radius: 10000px;
         color: #fff;
         display: inline-flex;
@@ -28945,7 +28971,6 @@
 
     .ranking-page-table__column {
         background: var(--bg);
-        padding: 6px 0
     }
 
     .ranking-page-table__column--dimmed {
@@ -29027,7 +29052,7 @@
     .ranking-page-table__row {
         --bg: #212126;
         font-size: 13px;
-        height: 35px
+        height: 42px
     }
 
     .ranking-page-table__row--inactive {
@@ -29653,7 +29678,7 @@
 
 
     .search-result--forum_post .search-entry {
-        --border-colour: white
+        --border-colour: #ffffff47
     }
 
     .search-result--wiki_page .search-entry {
@@ -29665,7 +29690,7 @@
     }
 
     .search-entry:hover {
-        --border-size: 2px
+        --border-size: 2px;
     }
 
     .search-forum-options {
@@ -29854,7 +29879,7 @@
     .search-header__input {
         -webkit-appearance: none;
         -moz-appearance: none;
-        background-color: #00000014;
+        background-color: #232328;
         border: none;
         border-radius: 20px;
         display: flex;
@@ -29900,19 +29925,11 @@
         margin: 10px 0;
         padding: 10px 0 10px 20px;
         position: relative;
-        width: 750px;
+        width: 850px;
     }
 
     .search-result:before {
-        border-bottom-left-radius: 4px;
-        border-top-left-radius: 4px;
-        content: "";
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        width: 5px
+        display: none
     }
 
     .search-result--beatmapset:before {
@@ -30342,7 +30359,7 @@
     }
 
     .show-more-link:active,.show-more-link:focus,.show-more-link:hover {
-        background-color: #92929257;
+        background-color: #24242a;
         color: #fff
     }
 
@@ -30378,8 +30395,6 @@
         margin: 5px auto
     }
 
-
-
     .show-more-link--notification-group {
         font-size: 10px
     }
@@ -30406,7 +30421,7 @@
     }
 
     .show-more-link.js-disabled,.show-more-link[data-disabled="1"] {
-        background-color: #92929257;
+        background-color: #212126;
     }
 
     .show-more-link__spinner {
@@ -31344,7 +31359,7 @@
 
     .store-notice {
         align-items: center;
-        background-color: hsl(var(--hsl-b4));
+        background-color: #1d1d20;
         color: hsl(var(--hsl-c1));
         display: flex;
         flex-direction: column;
@@ -31432,7 +31447,7 @@
     }
 
     .store-order--status-processing:before {
-        background-color: #ea0
+        background-color: white
     }
 
     .store-order--status-processing .store-order__status {
@@ -32868,8 +32883,8 @@
     }
 
     .team-members__type--owner {
-        background-color: hsl(var(--hsl-orange-1));
-        color: hsl(var(--hsl-orange-4));
+        background-color: #212126;
+        color: white;
         grid-template-columns: 1fr
     }
 
@@ -34398,7 +34413,7 @@
 
     .user-group-badge {
         align-items: center;
-        background-color: hsla(var(--hsl-b6),.75);
+        background-color: #262634;
         border-radius: 20px;
         color: var(--group-colour,hsl(var(--hsl-c1)));
         display: flex;
@@ -35542,27 +35557,29 @@
     }
 
     .wiki-search__suggestion em {
-        color: hsl(var(--hsl-l2));
+        color: #ccc;
         font-style: normal;
         font-weight: 700
     }
 
     .wiki-search__suggestion--active {
-        background-color: hsl(var(--hsl-b3))
+        background-color: #232326
     }
 
     .wiki-search__suggestions {
-        background-color: hsl(var(--hsl-b6));
-        border-radius: 0 0 6px 6px;
+        background-color: #222226;
+        border-radius: 20px;
         color: hsl(var(--hsl-c1));
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
         display: flex;
         flex: 1;
         flex-direction: column;
         left: 1px;
+        margin-top: 5px;
         max-height: 500px;
         overflow-y: auto;
         position: absolute;
-        width: calc(100% - 2px)
+        width: calc(100% - 2px);
     }
 
     .wiki-toc-list {
