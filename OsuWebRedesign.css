@@ -2,7 +2,7 @@
 @name         Osu!Website Redesign
 @namespace    github.com/9IZUKI9/Osu-Website-Redesign
 @homepageURL  https://github.com/9IZUKI9/Osu-Website-Redesign
-@version      26.04.2025
+@version      27.04.2025
 @description  Complete redesign of the osu! website
 @author       -Izuki-
 ==/UserStyle== */
@@ -21444,7 +21444,7 @@
     }
 
     .line-chart__hover-info-box {
-        background-color: hsl(var(--hsl-b6));
+        background-color: #1d1d20;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -21453,7 +21453,8 @@
         margin: 5px;
         padding: 10px;
         position: absolute;
-        top: 0
+        top: 0;
+        box-shadow: 0 2px 10px rgb(0 0 0 / 38%);
     }
 
     .line-chart__hover-info-box[data-float=right] {
@@ -21466,7 +21467,7 @@
     }
 
     .line-chart--profile-page .line-chart__hover-info-box-text--x {
-        color: hsl(var(--hsl-l1));
+        color: #ccc;
         order: 1
     }
 
@@ -28702,7 +28703,7 @@
     }
 
     .qtip {
-        color: hsl(var(--hsl-c1))
+        color: hsl(var(--hsl-c1));
     }
 
     .qtip--achievement {
@@ -28830,7 +28831,7 @@
     }
 
     .quick-search-input__input::-moz-placeholder {
-        color: hsl(var(--hsl-c2));
+        color: #ccc;
         opacity: .7
     }
 
@@ -29610,7 +29611,7 @@
     }
 
     .score-stats__stat-row--label {
-        background-color: hsl(var(--hsl-b6));
+        background-color: transparent;
         border-radius: 10000px;
         font-size: 12px;
         text-transform: uppercase;
